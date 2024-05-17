@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #E1E1E1;
+    font-family: 'Poppins', sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: white;
+    height: 70px;
+    border-bottom: 2px solid white;
+    background-color:rgb(255, 255, 255);
+}
+.menu{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu ul li{
+    list-style: none;
+    float: left;
+    padding: 15px;
+    
+}
+.menu ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+
+}
+.menu .fa-solid{
+    margin-right: 5px;
+}
+.form{
+    width: 20%;
+
+}
+
+.box1{
+    margin: 0px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color:#423f3f;
+    overflow: hidden;
+    color: inherit;
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 6px;
+    -webkit-box-align: center;
+    padding: 0px 8px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1rem;
+    
+
+}
+
+button{
+  position: relative;
+  right: 15px;
+  
+}
+button a{
+  text-decoration: none;
+  color: #fff;
+}
