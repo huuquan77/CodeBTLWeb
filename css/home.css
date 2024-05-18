@@ -10,12 +10,14 @@ body{
 .nav{
     display: flex;
     justify-content: space-between;
+    position: fixed;
     align-items: center;
     width: 100%;
     background: white;
     height: 70px;
     border-bottom: 2px solid white;
     background-color:rgb(255, 255, 255);
+    z-index: 1000;
 }
 .menu{
     width: 80%;
@@ -323,6 +325,7 @@ card .btn:hover {
     height: 150px;
     object-fit: cover;
   }
+ 
   
   .container .slider-scrollbar {
     height: 24px;
@@ -330,6 +333,7 @@ card .btn:hover {
     display: flex;
     align-items: center;
   }
+  
   
   .slider-scrollbar .scrollbar-track {
     background: #ccc;
@@ -403,7 +407,7 @@ card .btn:hover {
     position: relative;
     width: 100%;
     height: 400px;
-    background-image: url(img4.webp); 
+    background-image: url('./images/img4.webp'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -508,7 +512,6 @@ card .btn:hover {
     user-select: none;
     margin-left: 0px;
     width:23.5rem;
-    border: 1px solid black
 }
 .carousel img:first-child{
   margin-left: 0px;
