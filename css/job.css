@@ -253,17 +253,23 @@ button a{
 }
 /* Việc làm được xem nhiều nhất */
 .jobSeeMax{
-   
-    width: 100%;
-    /* margin: -40px auto 20px; */
+    padding: 20px;
+    width: 80%;
+    margin: -40px auto 20px;
 }
 
 .jobSeeMaxImgAndCard{
-    width: 400px;
-    height: 350px;
-    margin: -40px auto 20px;
-
+    width: 350px;
+    height: 300px;
+    margin: 40px auto 20px;
     background: white;
+    border-radius: 2px;
+    border: 1px solid purple;
+    cursor: pointer;
+}
+.jobSeeMaxImgAndCard:hover{
+    width: 340px;
+    height: 280px;
 }
 .jobSeeMax-img{
     width: 40%;
@@ -272,16 +278,15 @@ button a{
 .jobSeeMax-img img{
     width: 100%;
 }
-/* .jobSeeMax-card{
-    line-height: 2;
-} */
 
 .jobSeeMax-card h1{
+    padding-left: 20px;
     margin-bottom: 4px;
 }
 
 .jobSeeMax-card p{
     margin: 10px;
+    margin-left: 20px;
     line-height: 3;
     width: 100px;
     height: 50px;
@@ -292,11 +297,15 @@ button a{
 .main{
     width: 90%;
     height: 240px;
-
     display: flex;
 }
-.content {
+.content{
+    padding-top: 8px;
     display: flex;
     align-items: center;
     justify-content:space-around;
+}
+.jobSeeMaxImgAndCard-max {
+    display: flex;
+    background-color: white;
 }
