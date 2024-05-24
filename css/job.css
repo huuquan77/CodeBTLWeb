@@ -260,7 +260,7 @@ button a{
 
 .jobSeeMaxImgAndCard{
     width: 350px;
-    height: 300px;
+    height: 310px;
     margin: 40px auto 20px;
     background: white;
     border-radius: 2px;
@@ -269,7 +269,7 @@ button a{
 }
 .jobSeeMaxImgAndCard:hover{
     width: 340px;
-    height: 280px;
+    height: 300px;
 }
 .jobSeeMax-img{
     width: 40%;
@@ -300,7 +300,7 @@ button a{
     display: flex;
 }
 .content{
-    padding-top: 8px;
+    padding-top: 40px;
     display: flex;
     align-items: center;
     justify-content:space-around;
