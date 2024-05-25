@@ -307,5 +307,35 @@ button a{
 }
 .jobSeeMaxImgAndCard-max {
     display: flex;
+    background-color: #6633FF;
+}
+
+/* Những doanh nghiệp hàng đâu */
+.BestEnterprise{
+    padding: 20px;
+    width: 80%;
+    margin: -40px auto 20px;
+    display: flex;
+    gap: 20px; 
+    background-color: #6633FF ;
+}
+
+.BestEnterprise-card {
     background-color: white;
+    width: 300px;
+    height: 230px;
+    border-radius: 5px;
+    margin: 10px; 
+    cursor: pointer;
+}
+
+.BestEnterprise-card img {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width: 40%; 
+    height: 30%; 
+    object-fit: contain;
+}
+.card-text:hover {
+    color: purple;
 }
