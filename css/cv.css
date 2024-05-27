@@ -62,39 +62,29 @@
     color: white;
     font-size: 17px;
     }
-    .cvs{
-      width: 100%;
-      height: 100%;
-      
-      padding: 20px;
-     
-    }
+
+
     .cvs .cv-container{
       
       display: grid;
-      grid-template-columns: repeat(4 , 1fr);
-      grid-gap: 20px 20px;
-      justify-items: center; 
-      align-items: center;
-      
-    
-     
+      grid-template-columns: repeat(4 , 250px);
+      grid-template-rows: repeat(4, 330px);
+      justify-content: center;
+      grid-gap: 2rem; 
   }
-  
   .cvs .cv-container .cv{
-      overflow: hidden;
-      border-radius: .5rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      background: #fff;
-      transition: transform 0.3s; 
-      width: 250px;
-      height: 350px;
-      margin: 0px;
+    border: 1px solid none;
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for subtle effect */
+    background: #fff;
+    transition: transform 0.3s; /* Smooth transition for scaling */
+    margin: 0px;
     
   }
   
   .cvs .cv-container .cv:hover{
-      transform: scale(1.03); 
+      transform: scale(1.03); /* Slight scaling effect on hover */
   }
   
   .cvs .cv-container .cv img{
@@ -102,54 +92,91 @@
       width: 100%;
       height: 15rem;
       object-fit: cover;
-      transition: transform 0.3s; 
+      transition: transform 0.3s; /* Smooth transition for scaling */
   }
   
   .cvs .cv-container .cv img:hover {
-      transform: scale(1.1); 
+      transform: scale(1.1); /* Slight scaling effect on hover */
   }
   
   .cvs .cv-container .cv .content{
       padding: 2rem;
-      background: #f9f9f9; 
+      background: #f9f9f9; /* Light background color for content */
   }
   
-  .cvs .cv-container .cv .content .icons{
+  .cvs .cv-container .cv .icons{
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      /* padding-bottom: 1.5rem; */
-      margin-bottom: 1rem;
-      border-bottom: 1px solid #e0e0e0; 
+      justify-content: space-around;
+      margin: 15px;
+   
+  }
+  .cvs .cv-container .cv .icons button{
+        border-radius: 5px;
+        font-size: 13px;
+        outline: none;
+        border: none;
+        padding: 4px;
+  }
+  .cvs .cv-container .cv .icons button i{
+    margin-right: 2px;
+  }
+  .cvs .cv-container .cv p{
+    font-size: 20px;
+    margin: 10px;
+  }
+  .cvs .cv-container .cv{
+    border: 1px solid none;
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for subtle effect */
+    background: #fff;
+    transition: transform 0.3s; /* Smooth transition for scaling */
+    margin: 0px;
+    
   }
   
-  .cvs .cv-container .cv .content .icons a{
-      color: #888; 
-      font-size: 0.8rem;
-      transition: color 0.3s; 
+  .cvs .cv-container .cv:hover{
+      transform: scale(1.03); /* Slight scaling effect on hover */
   }
   
-  .cvs .cv-container .cv .content .icons a:hover{
-      color: #333; 
+  .cvs .cv-container .cv img{
+      /* height: 20rem; */
+      width: 100%;
+      height: 15rem;
+      object-fit: cover;
+      transition: transform 0.3s; /* Smooth transition for scaling */
   }
   
-  .cvs .cv-container .cv .content .icons i{
-      color: #FF7F50; 
-      padding-right: .5rem;
-      font-size: 1rem;
+  .cvs .cv-container .cv img:hover {
+      transform: scale(1.1); /* Slight scaling effect on hover */
   }
   
-  .cvs .cv-container .cv .content h3{
-      line-height: 1.4; 
-      color: #333; 
-      font-size: 2rem; 
-      padding: .5rem 0;
+  .cvs .cv-container .cv .content{
+      padding: 2rem;
+      background: #f9f9f9; /* Light background color for content */
   }
   
-  .cvs .cv-container .cv .content p{
-      line-height: 1.6; 
-      color: #666; 
-      font-size: 1.4rem;
-      padding: .5rem 0;
+  .cvs .cv-container .cv .icons{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 15px;
+   
   }
+  .cvs .cv-container .cv .icons button{
+        border-radius: 5px;
+        font-size: 13px;
+        outline: none;
+        border: none;
+        padding: 4px;
+  }
+  .cvs .cv-container .cv .icons button i{
+    margin-right: 2px;
+  }
+  .cvs .cv-container .cv p{
+    font-size: 20px;
+    margin: 10px;
+  }
+  
   
