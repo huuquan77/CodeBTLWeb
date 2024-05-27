@@ -45,21 +45,111 @@
     width: 20%;
   
   }
-  
   .box{
-  border: none;
-  background: transparent;
-  text-decoration: none;
-  width: 100px;
-  height: 45px;
-  border: 1px solid none;
-  border-radius: 4px;
-  background: #6a5af9;
-  margin-right: 10px;
-
+    border: none;
+    background: transparent;
+    text-decoration: none;
+    width: 100px;
+    height: 45px;
+    border: 1px solid none;
+    border-radius: 4px;
+    background: #6a5af9;
+    margin-right: 10px;
+  
+    }
+    .box a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    }
+    .cvs{
+      width: 100%;
+      height: 100%;
+      
+      padding: 20px;
+     
+    }
+    .cvs .cv-container{
+      
+      display: grid;
+      grid-template-columns: repeat(4 , 1fr);
+      grid-gap: 20px 20px;
+      justify-items: center; 
+      align-items: center;
+      
+    
+     
   }
-  .box a{
-  text-decoration: none;
-  color: white;
-  font-size: 17px;
+  
+  .cvs .cv-container .cv{
+      overflow: hidden;
+      border-radius: .5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background: #fff;
+      transition: transform 0.3s; 
+      width: 250px;
+      height: 350px;
+      margin: 0px;
+    
   }
+  
+  .cvs .cv-container .cv:hover{
+      transform: scale(1.03); 
+  }
+  
+  .cvs .cv-container .cv img{
+      /* height: 20rem; */
+      width: 100%;
+      height: 15rem;
+      object-fit: cover;
+      transition: transform 0.3s; 
+  }
+  
+  .cvs .cv-container .cv img:hover {
+      transform: scale(1.1); 
+  }
+  
+  .cvs .cv-container .cv .content{
+      padding: 2rem;
+      background: #f9f9f9; 
+  }
+  
+  .cvs .cv-container .cv .content .icons{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* padding-bottom: 1.5rem; */
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #e0e0e0; 
+  }
+  
+  .cvs .cv-container .cv .content .icons a{
+      color: #888; 
+      font-size: 0.8rem;
+      transition: color 0.3s; 
+  }
+  
+  .cvs .cv-container .cv .content .icons a:hover{
+      color: #333; 
+  }
+  
+  .cvs .cv-container .cv .content .icons i{
+      color: #FF7F50; 
+      padding-right: .5rem;
+      font-size: 1rem;
+  }
+  
+  .cvs .cv-container .cv .content h3{
+      line-height: 1.4; 
+      color: #333; 
+      font-size: 2rem; 
+      padding: .5rem 0;
+  }
+  
+  .cvs .cv-container .cv .content p{
+      line-height: 1.6; 
+      color: #666; 
+      font-size: 1.4rem;
+      padding: .5rem 0;
+  }
+  
