@@ -4,7 +4,6 @@
 
 }
 body{
-    background-color: #E1E1E1;
     font-family: 'Poppins', sans-serif;
 }
 .nav{
@@ -17,7 +16,7 @@ body{
     background: white;
     height: 70px;
     border-bottom: 2px solid white;
-    background-color:rgb(255, 255, 255);
+    background-color:#07013c;
     z-index: 1000;
 }
 .menu{
@@ -34,9 +33,7 @@ body{
 }
 .menu ul li a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
-
-
+    color: rgb(255, 255, 255);
 }
 .menu .fa-solid{
     margin-right: 5px;
@@ -215,10 +212,12 @@ button a{
 
 .topjobAndImg{
     margin-top: 40px;
-    background-color: #fff ;
+    background-color: #f2f7ff;
     display: flex;
     width: 100%;
-    height: 50px;
+    height: 80px;
+    border-radius: 15px;
+    border: 1px solid #07013c;
 }
 .topjobAndImg img{
     height: 100%;
@@ -227,14 +226,14 @@ button a{
 }
 .topjobAndImg h2 {
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 8px;
 }
 
 /* Thẻ top 10 doanh nghiệp */
 .jobs{
     display: flex;
-    margin: 30px 80px 30px;
+    margin: 15px 80px 30px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -247,7 +246,7 @@ button a{
     padding: 30px 30px;
     border-radius: 5px;
     box-shadow: rgba(0,0,0,1);
-    border: 1px solid purple;
+    border: 1px solid #07013c;
 }
 
 .job-card img{
@@ -259,84 +258,12 @@ button a{
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
+    transition: background-color 0.3s ease;
 }
 .job-card:hover{
-    width: 20.5%;
-    height:20.5%;
-}
-/* Việc làm được xem nhiều nhất */
-.jobSeeMax{
-    padding: 20px;
-    width: 80%;
-    margin: -40px auto 20px;
-}
-.jobSeeMax-text{
-    width: 100%;
-    height: 100px;
-    background-color: white;
-    margin-top: 50px;
-    display: flex;
-}
-.jobSeeMax-text img{
-    height: 100%;
-    width: 10%;
-    object-fit: contain;
-}
-.jobSeeMax-text h2{
-    padding-top: 35px;
-    padding-left: 10px;
-}
-.jobSeeMaxImgAndCard{
-    width: 350px;
-    height: 310px;
-    margin: 40px auto 20px;
-    background: white;
-    border-radius: 2px;
-    border: 1px solid purple;
-    cursor: pointer;
-}
-.jobSeeMaxImgAndCard:hover{
-    width: 340px;
-    height: 300px;
-}
-.jobSeeMax-img{
-    width: 40%;
-    margin-right: 30px;
-}
-.jobSeeMax-img img{
-    width: 100%;
+    background-color: #f0f0f0;
 }
 
-.jobSeeMax-card h1{
-    padding-left: 20px;
-    margin-bottom: 4px;
-}
-
-.jobSeeMax-card p{
-    margin: 10px;
-    margin-left: 20px;
-    line-height: 3;
-    width: 100px;
-    height: 50px;
-    background: aqua;
-    text-align: center;
-    border-radius: 25px;
-}
-.main{
-    width: 90%;
-    height: 240px;
-    display: flex;
-}
-.content{
-    padding-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-}
-.jobSeeMaxImgAndCard-max {
-    display: flex;
-    background-color: #6633FF;
-}
 
 /* Những doanh nghiệp hàng đâu */
 .BestEnterprise{
@@ -345,18 +272,21 @@ button a{
     margin: -40px auto 20px;
     display: flex;
     gap: 20px; 
-    background-color: #6633FF ;
 }
 
 .BestEnterprise-card {
+    border: 1px solid #07013c;
     background-color: white;
     width: 300px;
     height: 230px;
     border-radius: 5px;
     margin: 10px; 
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-
+.BestEnterprise-card:hover {
+    background-color: #f0f0f0; 
+}
 .BestEnterprise-card img {
     padding-top: 10px;
     padding-bottom: 30px;
@@ -365,15 +295,17 @@ button a{
     object-fit: contain;
 }
 .card-text:hover {
-    color: purple;
+    color: orange;
 }
 .BestEnterprise_Text_Img{
-    padding: 20px;
+    border: 1px solid #07013c;
+    padding: 10px;
     width: 80%;
-    margin: -40px auto 20px;
-    background-color: #fff ;
+    margin: 30px auto 20px;
+    background-color: #f2f7ff ;
     display: flex;
     height: 55px;
+    border-radius: 15px;
 }
 .BestEnterprise_Text_Img img{
     height: 100%;
@@ -384,42 +316,4 @@ button a{
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 8px;
-}
-
-/* Việc làm đến từ topCV */
-.topCV {
-    padding: 20px;
-    width: 80%;
-    margin: -40px auto 20px;
-    border: 1px solid purple;
-    border-radius: 25px;
-    position: relative;
-    top: 50px;
-}
-.container{
-    width: 100%;
-    height: 1100px;
-    background-color: #eee;
-}
-
-.TopCV-text{
-    display: flex;
-    width: 100%;
-    height: 80px;
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    border-top-left-radius: 25px;   
-    border-top-right-radius: 25px;
-}
-.TopCV-text img{
-    height: 100%;
-    width: 10%;
-    object-fit: contain;
-}
-.TopCV-text h2{
-    padding-top: 23px;
-    padding-left: 10px;
 }
