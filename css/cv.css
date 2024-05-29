@@ -117,10 +117,18 @@
       color: #fff;
       border-radius: 5px;
       font-size: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
       }
-      
+      .create-cv-btn {
+        background-color: #28a745;
+         color: #fff;
+      }
+      .create-cv-btn:hover {
+        background-color: #6c5bff; 
+        color: #fff;
+      }
     
-
     .cvs .cv-container{  
       margin-top:20px ;
       display: grid;
