@@ -233,25 +233,22 @@ button a{
 /* Thẻ top 10 doanh nghiệp */
 .jobs{
     display: flex;
-    margin: 15px 80px 30px;
-    flex-wrap: wrap;
+    width: 80%;
     justify-content: space-between;
 }
 .job-card{
-    cursor: pointer;
     text-align: center;
-    background-color: white;
-    height: 50%;
-    width: 20%;
-    padding: 30px 30px;
-    border-radius: 5px;
-    box-shadow: rgba(0,0,0,1);
+    cursor: pointer;
+    width: 30%; 
     border: 1px solid #07013c;
+    margin: 10px auto; 
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
 }
-
 .job-card img{
-    width: 100%;
-    height: 100%;
+    width: 30%;
+    height: 30%;
+    object-fit: contain;
     
 }
 .Salary-time{
@@ -323,7 +320,7 @@ button a{
     width: 80%;
     margin: -40px auto 20px;
     gap: 20px; 
-    border: 1px solid red;
+    border: 1px solid black;
     height: auto;
     border-radius: 15px;
 }
@@ -347,6 +344,7 @@ button a{
     margin-left: 8px;
 }
 .TopCV-card{
+    cursor: pointer;
     width: 35%;
     display: flex;
     border: 1px solid #07013c;
