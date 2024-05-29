@@ -270,7 +270,22 @@ button a{
     width: 80%;
     margin: -40px auto 20px;
 }
-
+.jobSeeMax-text{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    margin-top: 50px;
+    display: flex;
+}
+.jobSeeMax-text img{
+    height: 100%;
+    width: 10%;
+    object-fit: contain;
+}
+.jobSeeMax-text h2{
+    padding-top: 35px;
+    padding-left: 10px;
+}
 .jobSeeMaxImgAndCard{
     width: 350px;
     height: 310px;
@@ -369,4 +384,42 @@ button a{
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 8px;
+}
+
+/* Việc làm đến từ topCV */
+.topCV {
+    padding: 20px;
+    width: 80%;
+    margin: -40px auto 20px;
+    border: 1px solid purple;
+    border-radius: 25px;
+    position: relative;
+    top: 50px;
+}
+.container{
+    width: 100%;
+    height: 1100px;
+    background-color: #eee;
+}
+
+.TopCV-text{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-top-left-radius: 25px;   
+    border-top-right-radius: 25px;
+}
+.TopCV-text img{
+    height: 100%;
+    width: 10%;
+    object-fit: contain;
+}
+.TopCV-text h2{
+    padding-top: 23px;
+    padding-left: 10px;
 }
