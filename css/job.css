@@ -233,17 +233,24 @@ button a{
 /* Thẻ top 10 doanh nghiệp */
 .jobs{
     display: flex;
-    width: 80%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .job-card{
+    margin: 20px;
     text-align: center;
     cursor: pointer;
-    width: 30%; 
+    width: 50%;
     border: 1px solid #07013c;
-    margin: 10px auto; 
     border-radius: 15px;
     transition: background-color 0.3s ease;
+    line-height: 35px;
+}
+.job-card1{
+    margin: 20px;
+    text-align: center;
+    width: 50%;
+    border-radius: 15px;
+    line-height: 35px;
 }
 .job-card img{
     width: 30%;
@@ -252,10 +259,8 @@ button a{
     
 }
 .Salary-time{
-    margin-top: 20px;
     display: flex;
     justify-content: space-around;
-    transition: background-color 0.3s ease;
 }
 .job-card:hover{
     background-color: #f0f0f0;
