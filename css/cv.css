@@ -45,6 +45,9 @@
   
   
   }
+  logo{
+    margin-top: 3px;
+  }
   .menu .fa-solid{
     margin-right: 5px;
   }
@@ -82,7 +85,7 @@
       
       width: 100%;
       height: 350px;
-      background-image:url(../images/bannerCV\ \(2\).png);
+      background-image:url(../images/bannerCV.png);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
