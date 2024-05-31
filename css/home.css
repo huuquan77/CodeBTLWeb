@@ -1,10 +1,11 @@
 *{
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
 
 }
 body{
   font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
 
 .nav{
@@ -17,7 +18,6 @@ body{
 .menu{
   display:flex;
   justify-content: space-between;
-  /* align-items:center; */
 }
 .menu-icons .nav-link{
   display: flex;
@@ -83,27 +83,7 @@ transform: scaleX(1);
   transform: scaleX(1); 
   
 }
-.form{
-  width: 20%;
-}
-.box{
-border: none;
-background: transparent;
-text-decoration: none;
-width: 100px;
-height: 45px;
-border: 1px solid none;
-border-radius: 4px;
-background: #423f32;
-margin-right: 10px;
 
-
-}
-.box a{
-text-decoration: none;
-color: white;
-font-size: 17px;
-}
 
 .main{
 position: relative;
@@ -161,7 +141,7 @@ font-size: 20px;
 .top-company{
   width: 100%;
   height: auto;
-  background: #eee;
+  background: #fff;
 }
 
 .partner{
@@ -286,7 +266,7 @@ margin-left: 0px;
 .job-work{
 display: grid;
 grid-template-columns: repeat(3, 20.3rem);
-grid-template-rows: repeat(3,23rem);
+grid-template-rows: repeat(3,25rem);
 justify-content: center;
 gap: 3rem;
 margin-bottom: 50px;
@@ -309,7 +289,7 @@ border-top-right-radius: 10px;
 }
 .card-content{
   margin-left: 10px;
-  line-height: 2;
+  line-height: 1.5;
   padding: 5px;
 }
 .card-content h3 {
@@ -385,7 +365,7 @@ font-size: 14px;
 .assess{
 width: 99.7%;
 height: 100%;
-background: #eee;
+background: #fff;
 padding: 2px;
 margin: auto;
 }
@@ -408,7 +388,7 @@ height: 400px;
 margin: 0px auto 30px auto;
 position: relative;
 overflow: hidden;
-border: 1px solid none;
+border: 1px solid #b9b9b9;
 border-radius: 25px;
 }
 .slider .list{
@@ -472,12 +452,11 @@ width: 30px;
 .top-category{
   width: 100%;
   height: 100%;
-  background: #eee;
+  background: #fff;
 }
 .major{
 width: 78.7rem;
 height: auto;
-background: #eee;
 margin-right: auto;
 margin-left: auto;
 padding: 2px;
@@ -539,7 +518,7 @@ font-size: 18px;
 .text{
   width: 100%;
   height: auto;
-  background: #eee;
+  background: #fff;
   margin-bottom: 0px;
 }
 .text-container{
@@ -547,7 +526,6 @@ font-size: 18px;
   height: auto;
   margin-right: auto;
   margin-left: auto;
-  background: #eee;
   padding: 2px;
 }
 .text-container h1{
@@ -586,7 +564,7 @@ width: 362px;
 height: 130px;
 background: white;
 border-radius: 10px;
-border: 2px solid #eee;
+border: 2px solid #b9b9b9;
 transition: border-color 0.3s ease-out;
 
 
