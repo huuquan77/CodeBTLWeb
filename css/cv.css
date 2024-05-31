@@ -1,77 +1,109 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav{
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: #07013c;
+  z-index: 9999;
+}
+.menu{
+  display:flex;
+  justify-content: space-between;
+  /* align-items:center; */
+}
+.menu-icons .nav-link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-icons .nav-link li{
+  list-style: none; 
+  margin: 25px 40px 0 40px;
+}
+.menu-icons .nav-link li a{
+  text-decoration: none;  
+  color: white;
+  position: relative;
+}
+.nav-link  .fa-solid{
+  margin-right: 5px;
+}
+.menu .logo img{
+  margin-top: 7px;
+  margin-left: 10px;
+  height: 60px;
+  object-fit: cover;
+  width: 100%;
+}
+.menu button{
+  border: none;
+  background: transparent;
+  background: #362aa2b7;
+  width: 90px;
+  height: 40px;
+  margin-right: 10px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+.menu button a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link .active a::after,
+.menu-item a::after {
+content:"";
+position: absolute;
+width: 100%;
+height: 2px;
+background-color: white;
+bottom: -7px;
+left: 0;
+visibility: visible; 
+transition: .5s
+}
+.menu-item  a::after{
+visibility: hidden;
+transform: scaleX(0);
+}
+.nav-link .active a::after {
+visibility: visible; 
+transform: scaleX(1); 
+} 
+.menu-item a:hover::after {
+  visibility: visible; 
+  transform: scaleX(1); 
   
-  }
-  body{
-    
-    font-family: 'Poppins', sans-serif;
-  
-  
-  }
-  
-  .nav{
-    position: fixed;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    border-bottom: 2px solid white;
-    background-color:#07013c;
-    z-index: 1000;
-  }
-  .menu{
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .menu ul li{
-    list-style: none;
-    float: left;
-    padding: 15px;
-    width: 110px;
-    height: 20px;
-    border: 1px solid none;
-    
-  }
-  .menu ul li a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);
-    width: 100px;
-    height: 100px;
-  
-  
-  
- 
-  }
-  .menu .fa-solid{
-    margin-right: 5px;
-  }
-  .form{
-    width: 20%;
-  
-  }
-  .box{
-    border: none;
-    background: transparent;
-    text-decoration: none;
-    width: 100px;
-    height: 45px;
-    border: 1px solid none;
-    border-radius: 4px;
-    background: #423f32;
-    margin-right: 10px;
-  
-    }
-    .box a{
-    text-decoration: none;
-    color: white;
-    font-size: 17px;
-    }
+}
+.form{
+  width: 20%;
+}
+.box{
+border: none;
+background: transparent;
+text-decoration: none;
+width: 100px;
+height: 45px;
+border: 1px solid none;
+border-radius: 4px;
+background: #423f32;
+margin-right: 10px;
+
+
+}
+.box a{
+text-decoration: none;
+color: white;
+font-size: 17px;
+}
     
     .header{
       position: relative;

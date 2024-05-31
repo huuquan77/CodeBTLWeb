@@ -3,54 +3,90 @@
 *{
     margin: 0;
     padding: 0;
-  
   }
   body{
     font-family: 'Poppins', sans-serif;
-  
-  
   }
   
   .nav{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: #07013c;
+    z-index: 9999;
+  }
+  .menu{
+    display:flex;
+    justify-content: space-between;
+    /* align-items:center; */
+  }
+  .menu-icons .nav-link{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    background: white;
-    height: 70px;
-    border-bottom: 2px solid white;
-    background-color:#07013c;
   }
-  .menu{
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  .menu-icons .nav-link li{
+    list-style: none; 
+    margin: 25px 40px 0 40px;
   }
-  .menu ul li{
-    list-style: none;
-    float: left;
-    padding: 15px;
-    width: 110px;
-    height: 20px;
-    border: 1px solid none;
-    
+  .menu-icons .nav-link li a{
+    text-decoration: none;  
+    color: white;
+    position: relative;
   }
-  .menu ul li a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    width: 100px;
-    height: 100px;
-  
-  }
-  .menu .fa-solid{
+  .nav-link  .fa-solid{
     margin-right: 5px;
+  }
+  .menu .logo img{
+    margin-top: 7px;
+    margin-left: 10px;
+    height: 60px;
+    object-fit: cover;
+    width: 100%;
+  }
+  .menu button{
+    border: none;
+    background: transparent;
+    background: #362aa2b7;
+    width: 90px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 15px;
+    border-radius: 4px;
+  }
+  .menu button a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-link .active a::after,
+  .menu-item a::after {
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  bottom: -7px;
+  left: 0;
+  visibility: visible; 
+  transition: .5s
+  }
+  .menu-item  a::after{
+  visibility: hidden;
+  transform: scaleX(0);
+  }
+  .nav-link .active a::after {
+  visibility: visible; 
+  transform: scaleX(1); 
+  } 
+  .menu-item a:hover::after {
+    visibility: visible; 
+    transform: scaleX(1); 
+    
   }
   .form{
     width: 20%;
-  
   }
-  
   .box{
   border: none;
   background: transparent;
@@ -61,7 +97,8 @@
   border-radius: 4px;
   background: #423f32;
   margin-right: 10px;
-
+  
+  
   }
   .box a{
   text-decoration: none;
