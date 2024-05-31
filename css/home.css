@@ -174,8 +174,18 @@ font-size: 20px;
   margin-left: auto;
 }
 .partner h1{
-  text-align: center;
+  font-size: 25px;
+  margin:20px auto 0 auto;
+  width: 300px;
+  height: 80px;
+  color: white;
+  background-color: #6a5af9;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .wrapper{
 display: flex;
 max-width: 70.4rem;
@@ -259,7 +269,16 @@ margin-left: 0px;
   background: #fff
 }
 .job-position h1{
-  text-align: center;
+  font-size: 25px;
+  margin:20px auto 40px auto;
+  width: 300px;
+  height: 80px;
+  color: white;
+  background-color: #6a5af9;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .job-position{
   padding: 5px;
@@ -269,17 +288,24 @@ display: grid;
 grid-template-columns: repeat(3, 20.3rem);
 grid-template-rows: repeat(3,23rem);
 justify-content: center;
-gap: 2rem;
+gap: 3rem;
+margin-bottom: 50px;
 }
 .card{
- border: 1px solid black;
+ border: 1px solid #b9b9b9;
+ border-radius: 10px;
+ transition: transform 0.3 ease-in-out;
 }
-
+.card:hover{
+  transform: scale(1.1)
+}
 .card img{
 width: 100%;
 height: 150px;
 border-bottom : 2px solid #0483f1;
 object-fit: cover; 
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
 }
 .card-content{
   margin-left: 10px;
@@ -358,16 +384,28 @@ font-size: 14px;
 
 .assess{
 width: 99.7%;
-height: 525px;
+height: 100%;
 background: #eee;
 padding: 2px;
 margin: auto;
+}
+.assess h1{
+  font-size: 25px;
+  margin:20px auto 30px auto;
+  width: 650px;
+  height: 100px;
+  color: white;
+  background-color: #6a5af9;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .slider{
 width: 1010px;
 /* max-width: 100vw; */
 height: 400px;
-margin: auto;
+margin: 0px auto 30px auto;
 position: relative;
 overflow: hidden;
 border: 1px solid none;
@@ -445,7 +483,16 @@ margin-left: auto;
 padding: 2px;
 }
 .major h1{
-  text-align: center;
+  font-size: 25px;
+  margin:20px auto 30px auto;
+  width: 300px;
+  height: 80px;
+  color: white;
+  background-color: #6a5af9;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .major-search{
 display: flex;
@@ -457,10 +504,13 @@ justify-content: center;
 .major-container{
 width: 190px;
 height: 150px;
-border: 1px solid black;
+border: 2px solid black;
 display: grid;
 place-items: center;
 margin: 2.5rem;
+border-radius: 15px;
+transition: border-color 0,3s ease-out;
+
 }
 .major-container button{
 width: 70px;
@@ -468,6 +518,19 @@ height: 70px;
 border: 1px solid black;
 font-size: 40px;
 margin-top: 10px;
+border-radius: 10px;  
+}
+.major-container button:hover{
+  background-color: #6a5af9;
+  color: white;
+}
+.major-container:hover button{
+  background-color: #6a5af9;
+  color: white;
+}
+.major-container:hover{
+  background: #1edc0d;
+  border-color: #6a5af9;
 }
 .major-container p{
 font-size: 18px;
@@ -488,7 +551,16 @@ font-size: 18px;
   padding: 2px;
 }
 .text-container h1{
-  text-align: center;
+  font-size: 25px;
+  margin:20px auto 30px auto;
+  width: 380px;
+  height: 80px;
+  color: white;
+  background-color: #6a5af9;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .box-text{
   display: flex;
@@ -551,7 +623,7 @@ color: white;
 .footer{
 width: 100%;
 height: auto;
-    background-color:#07013c;
+background-color:#07013c;
 }
 .infor-web{
   width:78.4rem;
