@@ -39,14 +39,14 @@
   }
   .menu ul li a{
     text-decoration: none;
+    text-transform: uppercase;
     color: rgb(255, 255, 255);
     width: 100px;
     height: 100px;
   
   
-  }
-  logo{
-    margin-top: 3px;
+  
+ 
   }
   .menu .fa-solid{
     margin-right: 5px;
