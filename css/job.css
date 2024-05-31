@@ -428,7 +428,9 @@
 .list-card {
     display: flex;
     align-items: center;
-    position: relative; /* Đảm bảo các thẻ con có thể sử dụng vị trí tương đối */
+    position: relative; 
+    overflow: hidden; 
+    width: 1250px; 
 }
 .list-card-mot {
     background-color: white;
@@ -437,7 +439,8 @@
     border: 1px solid black;
     margin-top: 20px;
     margin-left: 20px;
-    position: relative; /* Cho phép các phần tử con sử dụng vị trí tuyệt đối */
+    position: relative; 
+    flex-shrink: 0;
 }
 .list-card-mot img {
     margin-top: 8px;
@@ -450,37 +453,29 @@
     margin-top: 15px;
 }
 
-/* CSS cho icon bên trái */
-#left {
+
+#left,
+#right {
+    margin-top: -125px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: white; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1;
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    position: absolute;  
-    top: 50%; 
-    transform: translateY(-50%); 
-    background-color: white;
-    border-radius: 50%; 
-    width: 40px; 
-    height: 40px; 
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
-    cursor: pointer;
-    z-index: 1;
 }
 
-/* CSS cho icon bên phải */
-#right {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    position: absolute; 
-    right: -20px; 
-    top: 50%;
-    transform: translateY(-50%); 
-    background-color: white;
+#left {
     border-radius: 50%; 
-    width: 40px;
-    height: 40px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
-    cursor: pointer;
-    z-index: 1;
+}
+
+#right {
+    right: -20px;
+    border-radius: 50%; 
 }
