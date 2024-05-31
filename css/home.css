@@ -26,7 +26,7 @@ body{
 }
 .menu-icons .nav-link li{
   list-style: none; 
-  margin: 15px 40px 0 40px;
+  margin: 25px 40px 0 40px;
 }
 .menu-icons .nav-link li a{
   text-decoration: none;  
@@ -37,17 +37,17 @@ body{
   margin-right: 5px;
 }
 .menu .logo img{
-  margin-top: 5px;
+  margin-top: 7px;
   margin-left: 10px;
   height: 60px;
   object-fit: cover;
-  width: 100%
+  width: 100%;
 }
 .menu button{
   border: none;
   background: transparent;
   background: #362aa2b7;
-  width: 80px;
+  width: 90px;
   height: 40px;
   margin-right: 10px;
   margin-top: 15px;
@@ -112,7 +112,7 @@ position: relative;
 margin: 0px 0px;
 }
 .pic-img{
-
+object-fit: cover;
 width: 100%;
 height: 420px;
 background-image: url(../images/bannerhome.png); 
@@ -153,15 +153,10 @@ margin-bottom: 30px;
 border: none;
 width: 200px;
 height: 60px;
-background-color: orange;
+background-color: #6a5af9;
 color: #fff;
 border-radius: 5px;
 font-size: 20px;
-}
-
-.heading{
-text-align: center;
-margin-top:20px;
 }
 .top-company{
   width: 100%;
@@ -177,7 +172,9 @@ margin-top:20px;
   padding: 1px;
   margin-right: auto;
   margin-left: auto;
-  
+}
+.partner h1{
+  text-align: center;
 }
 .wrapper{
 display: flex;
@@ -262,20 +259,17 @@ margin-left: 0px;
   background: #fff
 
 }
-
-.job-position{
-  width: 78.7rem;
-  margin-left: auto;
-  margin-right: auto;
-  background: #fff;
-  padding: 2px;
+.job-position h1{
+  text-align: center;
 }
 
 
 .job-work{
-display: flex;
-margin: 30px 80px 30px;
-flex-wrap: wrap;
+display: grid;
+grid-template-columns: repeat(3, 20.3rem);
+grid-template-rows: repeat(1 28rem);
+justify-content: center;
+gap: 2rem;
 }
 .card{
 width: 20.3rem;
@@ -342,9 +336,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
-
-
-
 .assess{
 width: 99.7%;
 height: 525px;
@@ -433,13 +424,15 @@ margin-right: auto;
 margin-left: auto;
 padding: 2px;
 }
+.major h1{
+  text-align: center;
+}
 .major-search{
 display: flex;
 flex-wrap: wrap;
 justify-content: center;       
-
-
 }
+
 
 .major-container{
 width: 190px;
@@ -474,6 +467,9 @@ font-size: 18px;
   background: #eee;
   padding: 2px;
 }
+.text-container h1{
+  text-align: center;
+}
 .box-text{
   display: flex;
   flex-wrap: wrap;
@@ -498,12 +494,13 @@ width: 362px;
 height: 130px;
 background: white;
 border-radius: 10px;
+border: 2px solid #eee;
 transition: border-color 0.3s ease-out;
 
 
 }
 .content-box:hover{
-border-color: orange;
+border-color: #6a5af9;
 }
 
 .box-card{
