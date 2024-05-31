@@ -1,0 +1,469 @@
+body{
+    margin: 0;
+  }
+  .nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #07013c;
+    height: 70px;
+    border-bottom: 2px solid white;
+    /* background-color:rgb(255, 255, 255); */
+    z-index: 9999;
+    
+  }
+  .menu{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .menu ul li{
+    list-style: none;
+    float: left;
+    padding: 15px;
+    width: 110px;
+    height: 20px;
+    border: 1px solid none;
+    user-select: none;
+    
+  
+    
+  }
+  .menu ul li a{
+    text-decoration: none;
+    /* color: rgb(0, 0, 0); */
+    width: 100px;
+    height: 100px;
+    color: white;
+    position: relative;
+  }
+  .menu .active a::after,
+  .menu ul li a::after {
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    bottom: -7px;
+    left: 0;
+    visibility: visible; 
+  }
+  .menu ul li a::after{
+    visibility: hidden;
+    transform: scaleX(0);
+  }
+  .menu .active a::after {
+    visibility: visible; 
+    transform: scaleX(1); 
+  } 
+  .menu ul li a:hover::after {
+      visibility: visible; 
+      transform: scaleX(1); 
+      
+    }
+  .menu .fa-solid{
+    margin-right: 5px;
+  }
+  .form{
+    width: 20%;
+  
+  }
+  .box{
+  border: none;
+  background: transparent;
+  text-decoration: none;
+  width: 100px;
+  height: 45px;
+  border: 1px solid none;
+  border-radius: 4px;
+  background: #6a5af9;
+  margin-right: 10px;
+  
+  
+  }
+  .box a{
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  }
+  
+  
+  .contain-header{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 70px;
+    
+  }
+  .recommand{
+    width: 78.97rem;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  .recommand .banner{
+    position: relative;
+    
+  }
+  .recommand .banner img{
+    width: 100%;
+    height: 22.8rem;
+    object-fit: cover;
+  }
+  
+  .list-top{
+    display: inline-block;
+    margin-bottom: 2.2rem;
+    position: absolute;
+    top: 10%;
+    left:5%;
+  }
+  .list-top button{
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    outline: none;
+    line-height: 2;
+    text-decoration: none;
+    color: #eee;
+    margin-right: 2.5rem;
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+  }
+  .list-top button::after{
+    content: "";
+    width: 0 ;
+    height: 2px;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .list-top button:hover::after{
+    width: 100%
+    
+  }
+  .title{
+    margin-bottom: 3.8rem;
+    position: absolute;
+    top:25%;
+    left: 5%;
+    color: #eee;
+  }
+  .search-box{
+    display: flex;
+    justify-content: space-between;
+    width: 29rem;
+    height: 3.2rem;
+    background: white;
+    border-radius: 25px;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    /* padding: 2px; */
+  }
+  .search-box input{
+    width: 80%;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    border-radius: 25px;
+  }
+  .search-box a{
+    margin: auto;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 5px; 
+    background: #a3a2a2;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-decoration: none;
+    
+  }
+  .search-box a i{
+    font-size: 20px;
+     color: #eee;
+  }
+  
+  .list-contain{
+    width: 75rem;
+    height: 100%;
+    background: #fff;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    
+  }
+  
+  .name-company{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.6rem;
+  }
+  .name-company p{
+    margin-left: 3.75rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  
+  .name-company button{
+    margin-right: 3.75rem;
+    border: none;
+    background: transparent;
+    width: 11.8rem;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #eee; 
+    border-radius: 10px;
+  
+  }
+  .name-company button i{
+    margin-left: 0.6rem;
+  }
+  .dropdown{
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content{
+    display: none;
+    height: 21.8rem;  
+    position: absolute;                                                                                
+    right: 55px;
+    background-color: #f9f9f9;
+    min-width: 15.6rem;
+    z-index: 999;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    overflow: auto;
+  }
+  .dropdown-content a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+  }
+  .dropdown-content a:hover{
+    background-color: #f1f1f1;
+  }
+  .dropdown:hover .dropdown-content{
+    display: block;
+    
+  
+  }
+  .dropdown-content::-webkit-scrollbar{
+    width: 10px;
+    
+  
+  }
+  .dropdown-content::-webkit-scrollbar-track{
+    margin: 0 0;
+    background: #eee;
+    border-radius: 10px;
+  
+  
+  
+  }
+  .dropdown-content::-webkit-scrollbar-thumb{
+    background: #868686;
+    border-radius: 10px;
+    
+  }
+  
+  .list-company{
+    display: grid;
+    grid-template-columns: repeat(3, 22.5rem);
+    grid-template-rows: repeat(3, 28.1rem) ;
+    justify-content: center;
+    grid-gap: 1.5rem;
+    padding: 4.3rem;
+    position: relative;
+  }
+  .list-item{
+    border: 1px solid #07013c;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  .list-item .img1{
+    margin-top: 0.6rem;
+    width: 90%;
+    height: 25%;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+  }
+  .list-item .img2{
+    position: absolute;
+    top: 8.1rem;
+    left: 1.25rem;
+    object-fit: cover;
+    width: 5.5rem;
+    height: 5.5rem;
+    border: 1px solid #eee;
+    z-index: 1;
+  }
+  .list-item .name-company ul li{
+    list-style: none;  
+    margin-left: 5rem;
+    font-size: 10px;
+    
+  }
+  .list-item .job-salary{
+    position: absolute;
+    top: 14.3rem;
+    left: 1.25rem;
+    width: 20rem;
+    height: 3.75rem;
+    background-color: white;
+    line-height: 0.2;
+    border-radius: 15px;
+    border: 1px solid #e9e9e9;
+  }
+  
+  .list-item h3{
+    margin-left: 1.25rem;
+  }
+  .list-item p{
+    margin-left: 1.25rem;
+  
+  }
+  .list-item .job-location{
+    position: absolute;
+    top: 18.75rem;
+    left: 1,25rem;
+    width: 20rem;
+    height: 3.75rem;
+    background-color: white;
+    line-height: 0.2;
+    border-radius: 15px;
+    border: 1px solid #e9e9e9;
+  
+  }
+  .list-item button{
+    position: absolute;
+    top: 24.3rem;
+    border: none;
+    background: transparent;
+    width: 20rem;
+    height: 2.5rem;
+    color: white;
+    background-color: #10094ee3;
+    border-radius: 15px;
+  
+  }
+  .list-company .btn{
+    position: absolute;
+    bottom: 0.6rem;
+    left: 44%;    
+  }
+  .list-company .btn button{
+    border: none;
+    font-size: 20px;
+    background: transparent;
+    width: 8.75rem;
+    height: 3.1rem;
+    background-color: #eee;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .footer{
+    width: 100%;
+    height: auto;
+    background-color: #6a5af9;
+  }
+  .infor-web{
+    width:78.4rem;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2px;
+  
+  }
+  .footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+    margin-top: 10px;
+  }
+  .page img{
+    width: 10rem;
+    height: 5rem;
+  
+  }
+  
+  .page p{
+    color: white;
+    font-size: 15px;
+    line-height: 2rem;
+    margin-bottom: 10px;
+  }
+  .page .share a{
+    text-decoration: none;
+    height: 3rem;
+    width: 3rem;
+    border-radius: .5rem;
+    background: #666;
+    color: white;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 20px;
+  }
+  .page .share a:hover{
+    background: orange;
+    color: white;
+  }
+  .contact-infor h3{
+    color: white;
+    margin-top: 10px;
+  }
+  .contact-infor a {
+  
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    line-height: 2.5rem;
+    color: white;
+  }
+  .contact-infor a i{
+    margin-right: 10px;
+  }
+  .contact-infor a:hover{
+    color: orange;
+  }
+  .menu-bar{
+    color: white;
+    margin-top: 10px;
+  }
+  .menu-bar a{
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    line-height: 2.5rem;
+  }
+  .menu-bar a i{
+     
+    padding-right: 10px;
+  }
+  .menu-bar  .link:hover i{
+    margin-right: 1rem;
+  }
