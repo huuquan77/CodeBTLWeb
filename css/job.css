@@ -430,7 +430,7 @@
     align-items: center;
     position: relative; 
     overflow: hidden; 
-    width: 1250px; 
+    width: 1260px; 
 }
 .list-card-mot {
     background-color: white;
@@ -476,6 +476,6 @@
 }
 
 #right {
-    right: -20px;
+    right: -8px;
     border-radius: 50%; 
 }

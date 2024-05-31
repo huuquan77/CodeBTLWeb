@@ -1,25 +1,13 @@
 const leftArrow = document.getElementById('left');
-        const rightArrow = document.getElementById('right');
-        const carousel = document.querySelector('.carousel');
+const rightArrow = document.getElementById('right');
+const carousel = document.querySelector('.list-card');
 
-        rightArrow.addEventListener('click', () => {
-            carousel.scrollBy({ left: carousel.offsetWidth, behavior: 'smooth' });
-        });
+rightArrow.addEventListener('click', () => {
+    const visibleCards = Math.floor(carousel.offsetWidth / 290); // Số thẻ div hiển thị trên mỗi trang
+    carousel.scrollBy({ left: carousel.offsetWidth / visibleCards, behavior: 'smooth' });
+});
 
-        leftArrow.addEventListener('click', () => {
-            carousel.scrollBy({ left: -carousel.offsetWidth, behavior: 'smooth' });
-        });
-
-        function autoScroll() {
-            carousel.scrollBy({ left: carousel.offsetWidth, behavior: 'smooth' });
-
-            // If at the end of the carousel, scroll back to start
-            if (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth) {
-                setTimeout(() => {
-                    carousel.scrollTo({ left: 0, behavior: 'smooth' });
-                }, 3000); // 3 seconds delay before resetting to the start
-            }
-        }
-
-        // Auto scroll every 3 seconds
-        setInterval(autoScroll, 3000);
+leftArrow.addEventListener('click', () => {
+    const visibleCards = Math.floor(carousel.offsetWidth / 290); // Số thẻ div hiển thị trên mỗi trang
+    carousel.scrollBy({ left: -carousel.offsetWidth / visibleCards, behavior: 'smooth' });
+});
