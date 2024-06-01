@@ -17,7 +17,6 @@
   .menu{
     display:flex;
     justify-content: space-between;
-    /* align-items:center; */
   }
   .menu-icons .nav-link{
     display: flex;
@@ -92,7 +91,7 @@
     justify-content: space-around;
     align-items: center;
     top: 40%;
-    left: 4%;
+    left: 2%;
 }
 .search-container button {
     padding: 10px 20px;
@@ -133,7 +132,6 @@
     position: relative;
     width: 100%;
     height: 400px;
-    background: url(job.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -205,11 +203,9 @@
 }
 .search-text h1{
     margin-left: 15px;
-
 }
 .search-text p{
     margin-left: 15px;
-
 }
 .top-jobs {
     padding: 20px;
@@ -236,6 +232,33 @@
     margin-top: 20px;
     margin-left: 8px;
 }
+.suggestions {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.suggestions li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions li:hover {
+    background-color: #f0f0f0;
+}
+
+
 
 /* Thẻ top 10 doanh nghiệp */
 .jobs{
@@ -414,7 +437,7 @@
 }
 .list-card-mot {
     background-color: white;
-    height: 180px;
+    height: 200px;
     width: 290px;
     border: 1px solid black;
     margin-top: 20px;
@@ -432,6 +455,11 @@
     text-align: center;
     margin-top: 15px;
 }
+.list-card-mot p {
+    text-align: center;
+    margin-top: 10px;
+}
+
 
 
 #left,

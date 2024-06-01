@@ -20,7 +20,7 @@
                     <div class="menu-icons">
                         <ul class="nav-link">
                             <li class="menu-item"><a href="index.html"><i class="fa-solid fa-house"></i>Trang chủ</a></li>
-                            <li class="menu-item active"><a href="job.html"><i class="fa-solid fa-briefcase"></i>Việc làm</a></li>
+                            <li class="menu-item "><a href="job.html"><i class="fa-solid fa-briefcase"></i>Việc làm</a></li>
                             <li class="menu-item "><a href="company.html"><i class="fa-solid fa-building"></i>Công ty</a></li>
                             <li class="menu-item"><a href="cv.html"><i class="fa-solid fa-file"></i>Hồ sơ</a></li>
                             <li class="menu-item"><a href="contact.html"><i class="fa-solid fa-address-book"></i>Liên hệ</a></li>
@@ -32,7 +32,7 @@
         </section>
             <!-- Bức ảnh và thanh tìm kiếm. -->
             <div class="main-content">
-                <div class="imgJob"></div>
+                <img src="./images/logo.png" class="imgJob">
                 <div class="contentJob">
                     <h1>Đi tìm cơ hội, khám phá tiềm năng!</h1>
                     <p>Hãy để chúng tôi giúp bạn tìm ra công việc mơ ước của mình!</p>
@@ -46,24 +46,54 @@
                         <div class="input-icon">
                             <i class="fas fa-search"></i>
                             <input type="text" placeholder="Vị trí tuyển dụng">
+                            <ul class="suggestions" id="title-suggestions">
+                                <li>Software Engineer</li>
+                                <li>Data Scientist</li>
+                                <li>Product Manager</li>
+                                <li>UX Designer</li>
+                            </ul>
                         </div>
                         <div class="input-icon">
                             <i class="fas fa-map-marker-alt"></i>
                             <input type="text" placeholder="Tất cả địa điểm">
+                            <ul class="suggestions" id="location-suggestions">
+                                <li>Hà Nội</li>
+                                <li>Hồ Chí Minh</li>
+                                <li>Đà Nẵng</li>
+                                <li>Cần Thơ</li>
+                            </ul>
                         </div>
                         <div class="input-icon">
                             <i class="fas fa-user"></i>
                             <input type="text" placeholder="Tất cả kinh nghiệm">
+                            <ul class="suggestions" id="experience-suggestions">
+                                <li>Chưa có kinh nghiệm</li>
+                                <li>Ít hơn 1 năm kinh nghiệm</li>
+                                <li>1 năm kinh nghiệm</li>
+                                <li>2 năm kinh nghiệm</li>
+                                <li>3 năm kinh nghiệm</li>
+                                <li>4 năm kinh nghiệm</li>
+                                <li>5 năm kinh nghiệm</li>
+                                <li>Hơn 5 năm kinh nghiệm</li>
+                            </ul>
                         </div>
                         <div class="input-icon">
                             <i class="fas fa-money-bill-alt"></i>
                             <input type="text" placeholder="Tất cả mức lương">
+                            <ul class="suggestions" id="salary-suggestions">
+                                <li>Dưới 10 triệu</li>
+                                <li>10-15 triệu</li>
+                                <li>15-20 triệu</li>
+                                <li>20-25 triệu</li>
+                                <li>Thỏa thuận</li>
+                            </ul>
                         </div>
                         <button>Tìm kiếm</button>
                     </div>
-                    <img src="./images/jobSearch.png">
+                    <img src="./images/jobsearch8.jpg">
                 </div>
             </div>
+            <script src="./js/job2.js"></script>
             <!-- Những doanh nghiệp hàng đầu -->
                 <div class="BestEnterprise_Text_Img">
                     <img src="./images/LOGO JOB.png">
@@ -348,39 +378,82 @@
                         <div class="list-card-mot">
                             <img src="https://images02.vietnamworks.com/mobile_banner/025ee2ef5f56b6c602f58e11ffbca96f.png" alt="category icon">
                             <h3>Công nghệ thông tin / viễn thông</h3>
+                            <p>744 việc làm</p>
                         </div>
                         <div class="list-card-mot">
                             <img src="https://images02.vietnamworks.com/mobile_banner/3095006ad19fe6c6b284e35dce25dda3.png" alt="category icon">
                             <h3>Quản lý nhân sự</h3>
+                            <p>1474 việc làm</p>
                         </div>
                         <div class="list-card-mot">
                             <img src="https://images02.vietnamworks.com/mobile_banner/59d207e3791b33c89bc59bc870115187.png" alt="category icon">
                             <h3>Kế toán / kiểm toán</h3>
+                            <p>872 việc làm</p>
                         </div>
                         <div class="list-card-mot">
                             <img src="https://images02.vietnamworks.com/mobile_banner/7c4963d1362ccef9edfad58eb28d7b0a.png" alt="category icon">
                             <h3>Sản xuất</h3>
+                            <p>666 việc làm</p>
                         </div>
                         <div class="list-card-mot">
                             <img src="https://images02.vietnamworks.com/mobile_banner/f4c5be6a1c28aeb6856455d4503da972.png" alt="category icon">
                             <h3>Tiếp thị quảng cáo</h3>
+                            <p>654 việc làm</p>
                         </div>
                         <div class="list-card-mot">
                             <img src="https://images02.vietnamworks.com/mobile_banner/ec4d97f5e0b225db38a01f2e363628b3.png" alt="category icon">
                             <h3>Ngân hàng và dịch vụ tài chính</h3>
+                            <p>552 việc làm</p>
                         </div>
                         <div class="list-card-mot">
                             <img src="https://images02.vietnamworks.com/mobile_banner/f6ca4542b0a946b7158b80770289c5fc.png" alt="category icon">
                             <h3>Giáo dục</h3>
+                            <p>322 việc làm</p>
                         </div>
                         <div class="list-card-mot">
                             <img src="https://images02.vietnamworks.com/mobile_banner/8cdab57466b7483284fe26586f603fe8.png" alt="category icon">
                             <h3>Pháp lý</h3>
+                            <p>159 việc làm</p>
+                        </div>
+                        <div class="list-card-mot">
+                            <img src="https://images02.vietnamworks.com/mobile_banner/c15084a618ca5126f2cc0e6478ea901c.png" alt="category icon">
+                            <h3>Hành chính văn phòng</h3>
+                            <p>170 việc làm</p>
+                        </div>
+                        <div class="list-card-mot">
+                            <img src="https://images02.vietnamworks.com/mobile_banner/dba0b0db9049d141295c7a293b6a988c.png" alt="category icon">
+                            <h3>Khoa học kĩ thuật</h3>
+                            <p>178 việc làm</p>
+                        </div>
+                        <div class="list-card-mot">
+                            <img src="https://images02.vietnamworks.com/mobile_banner/7067646b513803cced0aba32aa13e7f4.png" alt="category icon">
+                            <h3>Hậu cần / xuất nhập khẩu, kho bãi</h3>
+                            <p>700 việc làm</p>
+                        </div>
+                        <div class="list-card-mot">
+                            <img src="https://images02.vietnamworks.com/mobile_banner/21fd48d51c1f019b06cd7a9500ea6800.png" alt="category icon">
+                            <h3>Nhân sự tuyển dụng</h3>
+                            <p>800 việc làm</p>
+                        </div>
+                        <div class="list-card-mot">
+                            <img src="https://images02.vietnamworks.com/mobile_banner/1841ccc8106ca1d66738381480cc6f0b.png" alt="category icon">
+                            <h3>Kỹ thuật</h3>
+                            <p>123 việc làm</p>
+                        </div>
+                        <div class="list-card-mot">
+                            <img src="https://images02.vietnamworks.com/mobile_banner/eb1c4b871991d4c2fbc08bb06fbad766.png" alt="category icon">
+                            <h3>Dịch vụ khách hàng</h3>
+                            <p>1708 việc làm</p>
+                        </div>
+                        <div class="list-card-mot">
+                            <img src="https://images02.vietnamworks.com/mobile_banner/8a2a88dc01ad2af66ad09268e55c6ddb.png" alt="category icon">
+                            <h3>Bác sĩ chuyên khoa</h3>
+                            <p>50 việc làm</p>
                         </div>
                     </div>
                     <i id="right" class="fa-solid fa-angle-right"></i>
                 </div>
             </div>
-            <script src="./js/job.js"></script>
+            <script src="./js/job1.js"></script>
     </body>
 </html>
