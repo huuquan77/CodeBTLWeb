@@ -1,10 +1,6 @@
-*{
-  margin: 0;
-  padding: 0;
-
-}
 body{
   font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
 
 .nav{
@@ -26,7 +22,7 @@ body{
 }
 .menu-icons .nav-link li{
   list-style: none; 
-  margin: 25px 40px 0 40px;
+  margin: 10px 40px 0 40px;
 }
 .menu-icons .nav-link li a{
   text-decoration: none;  
@@ -83,44 +79,14 @@ transform: scaleX(1);
   transform: scaleX(1); 
   
 }
-.form{
-  width: 20%;
-}
-.box{
-border: none;
-background: transparent;
-text-decoration: none;
-width: 100px;
-height: 45px;
-border: 1px solid none;
-border-radius: 4px;
-background: #423f32;
-margin-right: 10px;
-
-
-}
-.box a{
-text-decoration: none;
-color: white;
-font-size: 17px;
-}
-  
   .contain-header{
     width: 100%;
     height: auto;
     position: relative;
     top: 70px;
-    
-  }
-  .recommand{
-    width: 78.97rem;
-    margin-left: auto;
-    margin-right: auto;
-  
   }
   .recommand .banner{
     position: relative;
-    
   }
   .recommand .banner img{
     width: 100%;
@@ -146,20 +112,20 @@ font-size: 17px;
     margin-right: 2.5rem;
     text-align: center;
     position: relative;
-    font-size: 15px;
+    font-size: 17px;
+
   }
   .list-top button::after{
     content: "";
     width: 0 ;
     height: 2px;
-    background: black;
+    background: #eee;
     position: absolute;
     bottom: 0;
     left: 0;
   }
   .list-top button:hover::after{
-    width: 100%
-    
+    width: 100%; 
   }
   .title{
     margin-bottom: 3.8rem;
@@ -167,6 +133,7 @@ font-size: 17px;
     top:25%;
     left: 5%;
     color: #eee;
+    user-select: none;
   }
   .search-box{
     display: flex;
@@ -220,20 +187,20 @@ font-size: 17px;
     
   }
   
-  .name-company{
+  .name-companies{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 0.6rem;
   }
-  .name-company p{
+  .name-companies p{
     margin-left: 3.75rem;
     font-size: 1.8rem;
     font-weight: bold;
   }
   
   
-  .name-company button{
+  .name-companies button{
     margin-right: 3.75rem;
     border: none;
     background: transparent;
@@ -244,7 +211,7 @@ font-size: 17px;
     border-radius: 10px;
   
   }
-  .name-company button i{
+  .name-companies button i{
     margin-left: 0.6rem;
   }
   .dropdown{
@@ -260,8 +227,11 @@ font-size: 17px;
     min-width: 15.6rem;
     z-index: 999;
     border: 1px solid #eee;
-    border-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
     overflow: auto;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
   }
   .dropdown-content a{
     color: black;
@@ -369,8 +339,8 @@ font-size: 17px;
     line-height: 0.2;
     border-radius: 15px;
     border: 1px solid #e9e9e9;
-  
   }
+  
   .list-item button{
     position: absolute;
     top: 24.3rem;
