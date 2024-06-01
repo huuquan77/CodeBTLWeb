@@ -509,3 +509,89 @@
 #right:hover{
     background-color: #f0f0f0;
 }
+
+
+
+.footer{
+    width: auto;
+    height: 400px;
+    margin-top: 100px;
+    background: #07013c;
+ }
+    .infor-web{
+      width:78.4rem;
+      height: 400px;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 2px;
+    
+    }
+    .footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+    margin-top: 10px;
+    }
+    .page img{
+    width: 10rem;
+    height: 5rem;
+    
+    }
+    
+    .page p{
+    color: white;
+    font-size: 15px;
+    line-height: 2rem;
+    margin-bottom: 10px;
+    }
+    .page .share a{
+    text-decoration: none;
+    height: 3rem;
+    width: 3rem;
+    border-radius: .5rem;
+    background: #666;
+    color: white;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 20px;
+    }
+    .page .share a:hover{
+    background: orange;
+    color: white;
+    }
+    .contact-infor h3{
+    color: white;
+    margin-top: 10px;
+    }
+    .contact-infor a {
+    
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    line-height: 2.5rem;
+    color: white;
+    }
+    .contact-infor a i{
+    margin-right: 10px;
+    }
+    .contact-infor a:hover{
+    color: orange;
+    }
+    .menu-bar{
+    color: white;
+    margin-top: 10px;
+    }
+    .menu-bar a{
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    line-height: 2.5rem;
+    }
+    .menu-bar a i{
+     
+    padding-right: 10px;
+    }
+    .menu-bar  .link:hover i{
+    margin-right: 1rem;
+    } 
