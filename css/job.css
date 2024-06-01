@@ -444,6 +444,7 @@
     margin-left: 20px;
     position: relative; 
     flex-shrink: 0;
+    cursor: pointer;
 }
 .list-card-mot img {
     margin-top: 8px;
@@ -454,6 +455,10 @@
 .list-card-mot h3 {
     text-align: center;
     margin-top: 15px;
+}
+
+.list-card-mot h3:hover{
+    color:orange;
 }
 .list-card-mot p {
     text-align: center;
@@ -477,6 +482,7 @@
     display: flex; 
     justify-content: center; 
     align-items: center; 
+    transition: background-color 0.3s ease;
 }
 
 #left {
@@ -486,4 +492,12 @@
 #right {
     right: -8px;
     border-radius: 50%; 
+}
+
+#left:hover{
+    background-color: #f0f0f0;
+}
+
+#right:hover{
+    background-color: #f0f0f0;
 }
