@@ -406,6 +406,47 @@
     line-height: 25px;
 }
 
+.Trang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+}
+
+#left1, #right1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border: 1px solid #07013c;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+#left1 {
+    margin-left: 10px;
+}
+#left1:hover{
+    background-color: #f0f0f0;
+}
+
+#right1:hover{
+    background-color: #f0f0f0;
+}
+.TopCV-pages {
+    display: none;
+}
+
+.TopCV-pages:first-child {
+    display: block;
+}
+
 /* Lĩnh vực hot */
 .background {
     margin-top: 50px;
