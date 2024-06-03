@@ -1,0 +1,342 @@
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .nav{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: #07013c;
+    z-index: 9999;
+  }
+  .menu{
+    display:flex;
+    justify-content: space-between;
+    /* align-items:center; */
+  }
+  .menu-icons .nav-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-icons .nav-link li{
+    list-style: none; 
+    margin: 10px 40px 0 40px;
+  }
+  .menu-icons .nav-link li a{
+    text-decoration: none;  
+    color: white;
+    position: relative;
+  }
+  .nav-link  .fa-solid{
+    margin-right: 5px;
+  }
+  .menu .logo img{
+    margin-top: 5px;
+    margin-left: 10px;
+    height: 60px;
+    object-fit: cover;
+  }
+  .menu button{
+    border: none;
+    background: transparent;
+    background: #362aa2b7;
+    width: 90px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 15px;
+    border-radius: 4px;
+  }
+  .menu button a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-link .active a::after,
+  .menu-item a::after {
+  content:"";
+  position: absolute;
+  width: 100%;
+  /* width: 0; */
+  height: 2px;
+  background-color: white;
+  bottom: -7px;
+  left: 0;
+  visibility: visible; 
+  transition: transform .5s
+  }
+  .menu-item  a::after{
+  visibility: hidden;
+  /* width: 0; */
+  
+  transform: scaleX(0);
+  }
+  .nav-link .active a::after {
+  visibility: visible; 
+  width: 100%;
+  
+  transform: scaleX(1); 
+  } 
+  .menu-item a:hover::after {
+    visibility: visible; 
+    transform: scaleX(1); 
+    /* width: 100%; */
+    
+  }
+  
+  .contain-header{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 70px;
+    
+  }
+  .recommand{
+    /* display: flex;
+    justify-content: center; */
+  
+  }
+  .recommand .banner{
+    position: relative;
+    
+  }
+  .recommand .banner img{
+    width: 100%;
+    height: 22.8rem;
+    object-fit: cover;
+  }
+  
+  .list-top{
+    display: inline-block;
+    margin-bottom: 2.2rem;
+    position: absolute;
+    top: 10%;
+    left:5%;
+  }
+  .list-top button{
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    outline: none;
+    line-height: 2;
+    text-decoration: none;
+    color: #eee;
+    margin-right: 2.5rem;
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+  }
+  .list-top button::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: transform 0.5s ease-out;
+    visibility: hidden;
+    transform: scaleX(0);
+  }
+  .list-top button:hover::after{
+    visibility: visible;
+    transform: scaleX(1);
+   
+    
+  }
+  .title{
+    margin-bottom: 3.8rem;
+    position: absolute;
+    top:25%;
+    left: 5%;
+    color: #eee;
+  }
+  .search-box{
+    display: flex;
+    justify-content: space-between;
+    width: 29rem;
+    height: 3.2rem;
+    background: white;
+    border-radius: 25px;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    /* padding: 2px; */
+  }
+  .search-box input{
+    width: 80%;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    border-radius: 25px;
+  }
+  .search-box a{
+    margin: auto;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 5px; 
+    background: #a3a2a2;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-decoration: none;
+    
+  }
+  .search-box a i{
+    font-size: 20px;
+     color: #eee;
+  }
+  
+  
+  .company-container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* position: relative; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .company-container h1{
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+  
+  }
+  .company-container h1::after{
+    content: "";
+    width:0;
+    height: 2px;
+    background: black;
+    position: absolute;
+    bottom: -5px;
+    left: 40.5%;
+  }
+  .company-container h1:hover::after{
+    width: 19%;
+  }
+  
+  
+  .top-companies{
+      display: grid;
+      grid-template-columns: repeat(3, 370px);
+      grid-template-rows: repeat(3, 390px);
+      gap: 1.5rem;
+      /* justify-content: center; */
+      padding: 5px;
+  
+  }
+  .top-companies .company-content{
+      border: 1px solid #07013c;
+      border-radius: 10px;
+  }
+  .top-companies .company-content h3{
+      font-size: 17px;
+      margin-top: 10px;
+      margin-left: 15px;
+  
+  }
+  .top-companies .company-content p{
+      margin-left: 15px;
+  }
+  
+  .top-companies .company-content img{
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-top-right-radius: 9px;
+      border-top-left-radius: 9px;
+  }
+  
+  .footer{
+    width: 100%;
+    height: auto;
+    background-color: #6a5af9;
+  }
+  
+  .footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(3, 100px);
+    gap:2rem;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .page{
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .page img{
+    width: 10rem;
+    height: 5rem;
+  
+  }
+  
+  .page p{
+    color: white;
+    font-size: 15px;
+    line-height: 2rem;
+    margin-bottom: 10px;
+  }
+  .page .share a{
+    text-decoration: none;
+    height: 3rem;
+    width: 3rem;
+    border-radius: .5rem;
+    background: #666;
+    color: white;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 20px;
+  }
+  .page .share a:hover{
+    background: orange;
+    color: white;
+  }
+  .contact-infor {
+    margin-left: 10px;
+    margin-top:17px;
+  }
+  
+  
+  .contact-infor h3{
+    color: white;
+    margin-top: 10px;
+  }
+  .contact-infor a {
+  
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    line-height: 2.5rem;
+    color: white;
+  }
+  .contact-infor a i{
+    margin-right: 10px;
+  }
+  .contact-infor a:hover{
+    color: orange;
+  }
+  .menu-bar{
+    color: white;
+    margin-top: 10px;
+  }
+  .menu-bar a{
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    line-height: 2.5rem;
+  }
+  .menu-bar a i{
+     
+    padding-right: 10px;
+  }
+  .menu-bar  .link:hover i{
+    margin-right: 1rem;
+  }
