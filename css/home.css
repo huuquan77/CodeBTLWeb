@@ -276,6 +276,7 @@ margin-bottom: 50px;
  border: 1px solid #b9b9b9;
  border-radius: 10px;
  transition: transform 0.3 ease-in-out;
+ background-color:#07013c ;
 }
 .card:hover{
   transform: scale(1.1)
@@ -295,9 +296,11 @@ border-top-right-radius: 10px;
 }
 .card-content h3 {
 font-size: 16px;
+color: #ffff;
 }
 .card-content p{
 font-size: 14px;
+color: #ffff;
 }
 .short-content{
   display: flex;
@@ -307,7 +310,7 @@ font-size: 14px;
 .short-content .box1{
   width: 99px;
   height: 20px;
-  background-color: #b9b9b9;
+  background-color: #fefefe;
   border: 1px solid none;
   border-radius: 4px;
   font-size: 20px;
@@ -327,7 +330,7 @@ font-size: 14px;
 .box-content .box1{
   width: 90px;
   height: 20px;
-  background: #b9b9b9;
+  background: #cfcafa;
   background-color: 1px solid none;
   border-radius: 4px;  
   font-size: 14px;
@@ -341,7 +344,7 @@ font-size: 14px;
 .box-content .box2{
   width: 140px;
   height: 20px;
-  background: #b9b9b9;
+  background: #cfcafa;
   border-radius: 7px;
   font-size: 14px;
   display: flex;
@@ -353,7 +356,7 @@ font-size: 14px;
   height:20px;
   padding: 8px 16px;
   background: transparent;
-  background: linear-gradient(-45deg, #301ea0, #010b49); 
+  background-color: orange;  
   border-radius: 7px;
   margin: 16px auto 10px auto;
   text-align: center;
