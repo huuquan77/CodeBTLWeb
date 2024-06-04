@@ -15,7 +15,7 @@ body{
   .menu{
     display:flex;
     justify-content: space-between;
-    /* align-items:center; */
+  
   }
   .menu-icons .nav-link{
     display: flex;
@@ -35,10 +35,11 @@ body{
     margin-right: 5px;
   }
   .menu .logo img{
-    margin-top: 5px;
+    margin-top: 15px;
     margin-left: 10px;
-    height: 60px;
+    height: 50px;
     object-fit: cover;
+    width: 100%;
   }
   .menu button{
     border: none;
@@ -60,7 +61,6 @@ body{
   content:"";
   position: absolute;
   width: 100%;
-  /* width: 0; */
   height: 2px;
   background-color: white;
   bottom: -7px;
@@ -69,9 +69,7 @@ body{
   transition: transform .5s
   }
   .menu-item  a::after{
-  visibility: hidden;
-  /* width: 0; */
-  
+  visibility: hidden;  
   transform: scaleX(0);
   }
   .nav-link .active a::after {
@@ -82,9 +80,7 @@ body{
   } 
   .menu-item a:hover::after {
     visibility: visible; 
-    transform: scaleX(1); 
-    /* width: 100%; */
-    
+    transform: scaleX(1);    
   }
   
   .contain-header{
@@ -92,13 +88,8 @@ body{
     height: auto;
     position: relative;
     top: 70px;
-    
   }
-  .recommand{
-    /* display: flex;
-    justify-content: center; */
-  
-  }
+ 
   .recommand .banner{
     position: relative;
     
@@ -133,7 +124,7 @@ body{
     content: "";
     width: 100%;
     height: 2px;
-    background: black;
+    background: #eee;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -164,7 +155,6 @@ body{
     position: absolute;
     top: 70%;
     left: 5%;
-    /* padding: 2px; */
   }
   .search-box input{
     width: 80%;
@@ -197,10 +187,7 @@ body{
   .company-container{
     margin-top: 100px;
     margin-bottom: 100px;
-    /* position: relative; */
-    width: 100%;
-    display: flex;
-    justify-content: center;
+   
   }
   .company-container h1{
     text-align: center;
@@ -226,8 +213,8 @@ body{
       display: grid;
       grid-template-columns: repeat(3, 370px);
       grid-template-rows: repeat(3, 390px);
-      gap: 1.5rem;
-      /* justify-content: center; */
+      gap: 2.5rem;
+      justify-content: center;
       padding: 5px;
   
   }
@@ -256,7 +243,7 @@ body{
   .footer{
     width: 100%;
     height: auto;
-    background-color: #6a5af9;
+    background-color: #07013c;
   }
   
   .footer .box-container{
@@ -269,12 +256,12 @@ body{
   }
   .page{
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
   }
   .page img{
-    width: 10rem;
-    height: 5rem;
-  
+    width: 70%;
+    height: 70px;
+    object-fit: contain;
   }
   
   .page p{
@@ -302,8 +289,6 @@ body{
     margin-left: 10px;
     margin-top:17px;
   }
-  
-  
   .contact-infor h3{
     color: white;
     margin-top: 10px;
