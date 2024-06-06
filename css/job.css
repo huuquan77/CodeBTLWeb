@@ -366,10 +366,18 @@
     margin: 10px;
     border-radius: 15px;
     transition: background-color 0.3s ease;
-    max-height: 300px;
+    max-height: auto;
+    min-height: auto;
 }
+
 .TopCV-card:hover {
     background-color: #f0f0f0; 
+}
+.TopCV-card a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
 }
 
 .TopCV-card img{
