@@ -274,7 +274,7 @@ margin-bottom: 50px;
 .card{
  border: 1px solid #b9b9b9;
  border-radius: 10px;
- transition: transform 0.3 ease-in-out;
+ transition: transform 0.3s ease-in-out;
  background-color:#07013c ;
 }
 .card:hover{
@@ -283,7 +283,7 @@ margin-bottom: 50px;
 .card img{
 width: 100%;
 height: 150px;
-border-bottom : 2px solid #0483f1;
+/* border-bottom : 2px solid #0483f1; */
 object-fit: cover; 
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
@@ -479,14 +479,11 @@ padding: 2px;
 .major-search{
 display: flex;
 flex-wrap: wrap;
-justify-content: center;       
+justify-content: center;     
 }
-
-
 .major-container{
 width: 190px;
 height: 150px;
-border:4px solid #b9b9b9;
 display: grid;
 place-items: center;
 margin: 2.5rem;
@@ -501,8 +498,10 @@ border: 1px solid #b9b9b9;
 font-size: 40px;
 margin-top: 10px;
 border-radius: 10px;  
+background-color: #07013c;
+color: white;
 }
-.major-container button:hover{
+/* .major-container button:hover{
   background-color: #07013c;
   color: white;
 }
@@ -514,7 +513,7 @@ border-radius: 10px;
   background: #b9b9b9;
   border-color: #b9b9b9;
   color: white;
-}
+} */
 .major-container p{
 font-size: 18px;
 }
