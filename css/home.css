@@ -142,7 +142,8 @@ font-size: 20px;
 .top-company{
   width: 100%;
   height: auto;
-  background: #b9b9b9;
+  background: white;
+
 }
 
 .partner{
@@ -224,7 +225,7 @@ pointer-events: none;
   user-select: none;
   margin-left: 0px;
   width:23.5rem;
-  background: white;
+  background:white;
 }
 .carousel img:first-child{
 margin-left: 0px;
@@ -421,7 +422,7 @@ justify-content: space-between;
 width: 50px;
 height: 50px;
 border-radius: 50%;
-background-color: #fff5;
+background-color: #fff;
 color: #fff;
 border: none;
 font-family: monospace;
