@@ -1,40 +1,51 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Khai báo biến trang hiện tại và tổng số trang
-    let currentPage = 1; // Trang hiện tại bắt đầu từ 1
-    const totalPages = 5; // Tổng số trang là 5
+document.addEventListener('DOMContentLoaded', function() {
+    // Lấy tất cả các phần tử input và danh sách gợi ý
+    const inputs = document.querySelectorAll('.input-icon input'); // Lấy tất cả các input trong các phần tử có class .input-icon
+    const suggestionLists = document.querySelectorAll('.suggestions'); // Lấy tất cả các danh sách gợi ý có class .suggestions
 
-    // Lấy phần tử hiển thị trang hiện tại và các phần tử trang
-    const currentPageElement = document.getElementById("current-page"); // Lấy phần tử hiển thị số trang hiện tại
-    const pages = document.querySelectorAll(".TopCV-pages"); // Lấy tất cả các phần tử trang
+    inputs.forEach(input => {
+        // Thêm sự kiện focus cho mỗi input
+        input.addEventListener('focus', function() {
+            // Ẩn tất cả các danh sách gợi ý
+            suggestionLists.forEach(list => list.style.display = 'none');
+            
+            // Hiển thị danh sách gợi ý liên quan đến input đang được focus
+            const relatedList = this.nextElementSibling; // Lấy phần tử tiếp theo sau input hiện tại
+            if (relatedList && relatedList.classList.contains('suggestions')) {
+                relatedList.style.display = 'block'; // Hiển thị danh sách gợi ý liên quan
+            }
+        });
 
-    // Thêm sự kiện click cho nút mũi tên trái
-    document.getElementById("left1").addEventListener("click", function() {
-        // Kiểm tra xem có phải trang đầu tiên không
-        if (currentPage > 1) { // Nếu không phải trang đầu tiên
-            // Ẩn trang hiện tại
-            pages[currentPage - 1].style.display = "none"; // Ẩn trang hiện tại
-            // Giảm số trang hiện tại
-            currentPage--; // Giảm biến currentPage đi 1
-            // Hiển thị trang mới
-            pages[currentPage - 1].style.display = "block"; // Hiển thị trang mới
-            // Cập nhật số trang hiện tại trong phần tử hiển thị
-            currentPageElement.textContent = currentPage; // Cập nhật số trang hiện tại
+        // Thêm sự kiện input (nhập liệu) cho mỗi input
+        input.addEventListener('input', function() {
+            // Ẩn tất cả các danh sách gợi ý
+            suggestionLists.forEach(list => list.style.display = 'none');
+            
+            // Hiển thị danh sách gợi ý liên quan đến input đang nhập liệu
+            const relatedList = this.nextElementSibling; // Lấy phần tử tiếp theo sau input hiện tại
+            if (relatedList && relatedList.classList.contains('suggestions')) {
+                relatedList.style.display = 'block'; // Hiển thị danh sách gợi ý liên quan
+            }
+        });
+    });
+
+    // Ẩn danh sách gợi ý khi click bên ngoài
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.input-icon')) { // Nếu click bên ngoài vùng .input-icon
+            suggestionLists.forEach(list => list.style.display = 'none'); // Ẩn tất cả các danh sách gợi ý
         }
     });
 
-    // Thêm sự kiện click cho nút mũi tên phải
-    document.getElementById("right1").addEventListener("click", function() {
-        // Kiểm tra xem có phải trang cuối cùng không
-        if (currentPage < totalPages) { // Nếu không phải trang cuối cùng
-            // Ẩn trang hiện tại
-            pages[currentPage - 1].style.display = "none"; // Ẩn trang hiện tại
-            // Tăng số trang hiện tại
-            currentPage++; // Tăng biến currentPage lên 1
-            // Hiển thị trang mới
-            pages[currentPage - 1].style.display = "block"; // Hiển thị trang mới
-            // Cập nhật số trang hiện tại trong phần tử hiển thị
-            currentPageElement.textContent = currentPage; // Cập nhật số trang hiện tại
-        }
+    // Thêm sự kiện click cho từng mục gợi ý
+    suggestionLists.forEach(list => {
+        list.addEventListener('click', function(e) {
+            if (e.target.tagName === 'LI') { // Nếu click vào mục gợi ý (thẻ li)
+                const input = this.previousElementSibling; // Lấy input liền trước danh sách gợi ý
+                if (input) {
+                    input.value = e.target.textContent; // Cập nhật giá trị của input với nội dung của mục gợi ý
+                }
+                this.style.display = 'none'; // Ẩn danh sách gợi ý
+            }
+        });
     });
 });
-
