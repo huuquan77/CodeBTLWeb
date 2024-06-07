@@ -142,7 +142,7 @@ font-size: 20px;
 .top-company{
   width: 100%;
   height: auto;
-  background: #b9b9b9;
+  background: white;
 }
 
 .partner{
@@ -224,7 +224,7 @@ pointer-events: none;
   user-select: none;
   margin-left: 0px;
   width:23.5rem;
-  background: white;
+  background:white;
 }
 .carousel img:first-child{
 margin-left: 0px;
@@ -262,6 +262,7 @@ margin-left: 0px;
 }
 .job-position{
   padding: 5px;
+
 }
 .job-work{
 display: grid;
@@ -362,7 +363,7 @@ color: #ffff;
 }
 .card .btn a{
   text-decoration: none;
-  color: #eee;
+  color: #fff;
 }
 
 .assess{
@@ -421,7 +422,7 @@ justify-content: space-between;
 width: 50px;
 height: 50px;
 border-radius: 50%;
-background-color: #fff5;
+background-color: #fff;
 color: #fff;
 border: none;
 font-family: monospace;
@@ -456,13 +457,18 @@ width: 30px;
   width: 100%;
   height: 100%;
   background: #fff;
+  margin-top: 70px;
 }
 .major{
-width: 78.7rem;
+
+width: 75rem;
 height: auto;
 margin-right: auto;
 margin-left: auto;
 padding: 2px;
+border: 2px solid #b9b9b9;
+border-radius: 15px;
+position: relative;
 }
 .major h1{
   font-size: 25px;
@@ -475,6 +481,9 @@ padding: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: -61px;
+  left: 38%;
 }
 .major-search{
 display: flex;
