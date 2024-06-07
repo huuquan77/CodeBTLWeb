@@ -266,6 +266,7 @@
     justify-content: space-around;
 }
 .job-card{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
     text-align: center;
     cursor: pointer;
@@ -274,7 +275,7 @@
     border-radius: 15px;
     transition: background-color 0.3s ease;
     line-height: 35px;
-    height: 430px;
+    height: 310px;
 }
 .job-card1{
     margin: 20px;
@@ -283,18 +284,18 @@
 .job-card img{
     margin-top: 10px;
     width: 45%;
-    height: 45%;
+    height: 30%;
     object-fit: contain;
 }
 .job-card h2{
-    margin-top: -25px;
+    margin-top: -18px;
     color: #07013c;
 }
 .job-card:hover h2 {
-    color: #FFA500; /* Orange color */
+    color: #FFA500; 
 }
 .Salary-time{
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-around;
 }
@@ -373,6 +374,7 @@
     margin-left: 8px;
 }
 .TopCV-card{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     width: 35%;
     display: flex;
@@ -491,6 +493,7 @@
     width: 1260px; 
 }
 .list-card-mot {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: white;
     height: 200px;
     width: 290px;
