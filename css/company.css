@@ -56,6 +56,7 @@ body{
 .menu button a{
   text-decoration: none;
   color: white;
+  font-size: 17px;
 }
 
 .nav-link .active a::after,
@@ -68,7 +69,7 @@ background-color: white;
 bottom: -7px;
 left: 0;
 visibility: visible; 
-transition: .5s
+transition: transform .5s
 }
 .menu-item  a::after{
 visibility: hidden;

@@ -1,5 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
 body{
-    margin: 0;
+    
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -24,7 +29,7 @@ body{
   }
   .menu-icons .nav-link li{
     list-style: none; 
-    margin: 10px 40px 0 40px;
+    margin: 25px 40px 0 40px;
   }
   .menu-icons .nav-link li a{
     text-decoration: none;  
@@ -35,9 +40,9 @@ body{
     margin-right: 5px;
   }
   .menu .logo img{
-    margin-top: 15px;
+    margin-top: 7px;
     margin-left: 10px;
-    height: 50px;
+    height: 60px;
     object-fit: cover;
     width: 100%;
   }
@@ -73,9 +78,7 @@ body{
   transform: scaleX(0);
   }
   .nav-link .active a::after {
-  visibility: visible; 
-  width: 100%;
-  
+  visibility: visible;   
   transform: scaleX(1); 
   } 
   .menu-item a:hover::after {

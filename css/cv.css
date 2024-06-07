@@ -56,6 +56,7 @@ body{
 .menu button a{
   text-decoration: none;
   color: white;
+  font-size: 17px;
 }
 
 .nav-link .active a::after,
