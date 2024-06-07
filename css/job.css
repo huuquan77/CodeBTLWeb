@@ -6,13 +6,6 @@
   body{
     font-family: 'Poppins', sans-serif;
   }
-  img {
-    object-fit: cover; /* Giữ tỉ lệ và cắt bớt phần dư */
-    width: 100%;
-    height: auto;
-}
-
-
   .nav{
     position: fixed;
     width: 100%;
