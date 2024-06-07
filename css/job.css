@@ -6,6 +6,7 @@
   body{
     font-family: 'Poppins', sans-serif;
   }
+  
   .nav{
     position: fixed;
     width: 100%;
@@ -273,28 +274,42 @@
     border-radius: 15px;
     transition: background-color 0.3s ease;
     line-height: 35px;
+    height: 430px;
 }
 .job-card1{
     margin: 20px;
-    text-align: center;
     width: 50%;
-    border-radius: 15px;
-    line-height: 35px;
 }
 .job-card img{
-    width: 30%;
-    height: 30%;
+    margin-top: 10px;
+    width: 45%;
+    height: 45%;
     object-fit: contain;
-    
+}
+.job-card h2{
+    margin-top: -25px;
+    color: #07013c;
+}
+.job-card:hover h2 {
+    color: #FFA500; /* Orange color */
 }
 .Salary-time{
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
 }
 .job-card:hover{
     background-color: #f0f0f0;
 }
-
+.job-card:hover h2,
+.job-card:hover p,
+.job-card:hover .Salary-time p {
+    color: #FFA500; 
+}
+.job-card a{
+    text-decoration: none; 
+    color: black;
+}
 /* Thực tập */
 .TopCV-main-1{
     width: 80%;
