@@ -289,7 +289,93 @@ font-size: 17px;
   .cvs .cv-container .cv p:hover {
     color: #1601fe;
   }
+ .list-baiviet{
+    padding: 20px;
+  }
+  .list-card{
+    display: grid;
+    grid-template-columns: repeat(4, 260px);
+    grid-template-rows: repeat(1, 270px);
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .list-baiviet h1{
+    margin: auto;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 600px;
+    height: 80px;
+    line-height: 2.5;
+    color: #07013c;
+  
+  
+  }
+  .baiviet img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  
+  }
+  .baiviet{
+    border: 1px solid none;
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out;
+  }
+  .item1{
+    margin-left: 20px;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  
+  .text{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-bottom: 0px;
+  }
 
+.baiviet .btn{
+  width: 100px;
+  height:20px;
+  padding: 8px 10px;
+  background: transparent;
+  background-color: orange;  
+  border-radius: 7px;
+  margin: 25px auto 10px auto;
+  text-align: center;
+}
+.baiviet .btn a{
+   text-decoration: none;
+   color: #fff;
+}
+.baiviet .btn:hover{
+  background-color: #7e70ff;
+}
+.baiviet .btn1{
+  width: 100px;
+  height:20px;
+  padding: 8px 10px;
+  background: transparent;
+  background-color: orange;  
+  border-radius: 7px;
+  margin: 40px auto 10px auto;
+  text-align: center;
+
+}
+.baiviet .btn1 a{
+   text-decoration: none;
+   color: #fff;
+}
+.baiviet .btn1:hover{
+  background-color: #7e70ff;
+}
+.baiviet:hover{
+  transform: scale(1.03); 
+}
  .footer{
     width: auto;
     height: 400px;
@@ -373,3 +459,4 @@ font-size: 17px;
     .menu-bar  .link:hover i{
     margin-right: 1rem;
     } 
+    
