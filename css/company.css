@@ -117,7 +117,7 @@ transform: scaleX(1);
     margin-right: 2.5rem;
     text-align: center;
     position: relative;
-    font-size: 17px;
+    font-size: 15px;
 
   }
   .list-top button::after{
@@ -150,7 +150,7 @@ transform: scaleX(1);
     position: absolute;
     top: 70%;
     left: 5%;
-    /* padding: 2px; */
+  
   }
   .search-box input{
     width: 80%;
@@ -176,7 +176,7 @@ transform: scaleX(1);
   }
   .search-box a i{
     font-size: 20px;
-     color: #eee;
+    color: #eee;
   }
   
   .list-contain{
@@ -306,9 +306,11 @@ transform: scaleX(1);
     object-fit: cover;
     width: 6rem;
     height: 100px;
-    border: 1px solid #eee;
+    border: 1px solid #b9b9b9;
     z-index: 1;
     margin-top: 15px;
+    border-radius: 10px;
+
   }
   /* .name-company{
     display: flex;
@@ -376,11 +378,12 @@ transform: scaleX(1);
     border-radius: 15px;
   
   }
-    .list-company .btn{
-      transform: translate(100%,0)
+    .list-contain .btn{
+      display: flex;
+      justify-content: center;
 
     }
-    .list-company .btn button{
+    .list-contain .btn button{
       border: none;
       font-size: 20px;
       background: transparent;
@@ -389,6 +392,8 @@ transform: scaleX(1);
       background-color: #b9b9b9;
       border-radius: 10px;
       cursor: pointer;
+      margin-bottom: 15px;
+   
       
     }
   

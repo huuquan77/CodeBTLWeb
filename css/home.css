@@ -61,15 +61,15 @@ body{
 
 .nav-link .active a::after,
 .menu-item a::after {
-content:"";
-position: absolute;
-width: 100%;
-height: 2px;
-background-color: white;
-bottom: -7px;
-left: 0;
-visibility: visible; 
-transition: .5s
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  bottom: -7px;
+  left: 0;
+  visibility: visible; 
+  transition: .5s
 }
 .menu-item  a::after{
 visibility: hidden;
@@ -174,6 +174,7 @@ max-width: 70.4rem;
 position: relative;
 top: 40px;
 margin: auto;
+border: 1px solid #b9b9b9;
 
 }
 .wrapper i{
@@ -187,7 +188,7 @@ position: absolute;
 text-align: center;
 line-height: 44px;
 background: transparent;
-background-color: white;
+background-color: #b9b9b9;
 border-radius: 50%;
 transform: translateY(-50%);
 transition: transform 0.1s linear;
@@ -267,7 +268,7 @@ margin-bottom: 50px;
  background-color:#07013c ;
 }
 .card:hover{
-  transform: scale(1.1)
+  transform: scale(1.04)
 }
 .card img{
 width: 100%;
@@ -548,7 +549,14 @@ font-size: 18px;
 .card1{
   border: 1px solid black;
   border-radius: 10px;
+  transition: transform 0.3s ease-out;
+
 }
+
+.card1:hover{
+  transform: scale(1.1)
+}
+
 .item1{
   margin-left: 20px;
   font-size: 13px;
@@ -584,9 +592,12 @@ font-size: 18px;
   font-size: 12px;
 }
 .card1.push-up{
-  transform: translateY(-40px);
+  transform: translate(0,-20%);
+  transition: transform 0.3s ;
 }
-
+.card1.push-up:hover{
+  transform: translate(0,-20%) scale(1.1);
+}
 .text{
   width: 100%;
   height: auto;
