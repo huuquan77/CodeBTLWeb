@@ -186,11 +186,13 @@ font-size: 17px;
     background: #fff;
     transition: transform 0.3s; 
     margin: 20px;
-    
   }
-  h1{
+   .cvs h1{
     text-align: center;
-     margin-top: 0px;
+     margin-top: 50px;
+     line-height: 2.5;
+     color: #07013c;
+    
   }
   
   .cvs .cv-container .cv:hover{
@@ -307,8 +309,6 @@ font-size: 17px;
     height: 80px;
     line-height: 2.5;
     color: #07013c;
-  
-  
   }
   .baiviet img{
     width: 100%;
