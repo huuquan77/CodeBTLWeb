@@ -468,33 +468,39 @@
 .background {
     margin-top: 50px;
     width: 100%;
-    height: 250px;
+    height: 300px;
     position: relative;
 }
 .background img {
     width: 100%;
-    height: 300px;
-    z-index: -1;
+    height: 100%;
+    z-index: -1; 
+    top: 0;
+    left: 0;
+    object-fit: cover; 
 }
 .list {
-    position: absolute;
+    width: 79%;
+    height: 100%;
+    position: relative;
     z-index: 1;
+    margin-top: -303px;
+    justify-content: center;
+    align-items: center;
     margin-left: 2%;
-    margin-right: 2%;
+    margin-right:2%;
 }
 .list h2 {
     color: white;
-    margin-top: -280px;
     margin-left: 20px;
+    margin-top: 25px;
 }
 .list-card {
     display: flex;
-
+    height: 100%;
     overflow: hidden; 
     position: relative;
     width: 75rem;
-    
-    
 }
 .list-card-mot {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -539,7 +545,6 @@
 
 #left,
 #right {
-    margin-top: -125px;
     position: absolute;
     width: 100%;
     top: 50%;
@@ -577,7 +582,7 @@
     width: 100%;
     height: auto;
     background-color: #07013c;
-    margin-top: 3rem;
+    margin-top: 60px;
   }
 .footer .box-container{
   display: grid;
