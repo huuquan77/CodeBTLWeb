@@ -484,15 +484,12 @@
     height: 100%;
     position: relative;
     z-index: 1;
-    margin-top: -303px;
     justify-content: center;
     align-items: center;
-    margin-left: 2%;
-    margin-right:2%;
+    margin: -303px auto 30px;
 }
 .list h2 {
     color: white;
-    margin-left: 20px;
     margin-top: 25px;
 }
 .list-card {
@@ -501,6 +498,7 @@
     overflow: hidden; 
     position: relative;
     width: 75rem;
+
 }
 .list-card-mot {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
