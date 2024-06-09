@@ -466,39 +466,35 @@
 
 /* Lĩnh vực hot */
 .background {
-    margin-top:350px;
+    margin-top: 50px;
     width: 100%;
-    height: 300px;
+    height: 250px;
     position: relative;
-    justify-content: center;
-    align-items: center;
 }
 .background img {
     width: 100%;
-    height: 100%;
-    z-index: -1; 
-    top: 0;
-    left: 0;
-    object-fit: cover; 
-    position: absolute;
+    height: 300px;
+    z-index: -1;
 }
 .list {
-    position: relative;
-    width: 79%;
-    height: 100%;
-    z-index: 1;   
-    margin: -303px auto 30px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 .list h2 {
     color: white;
-    margin-top: 25px;
+    margin-top: -280px;
+    margin-left: 20px;
 }
 .list-card {
     display: flex;
-    height: 100%;
-    overflow: hidden; 
-    width: 75rem;
 
+    overflow: hidden; 
+    position: relative;
+    width: 75rem;
+    
+    
 }
 .list-card-mot {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -508,6 +504,7 @@
     border: 1px solid black;
     margin-top: 20px;
     margin-left: 20px;
+    position: relative; 
     flex-shrink: 0;
     cursor: pointer;
 }
@@ -516,8 +513,6 @@
     color: black;
 }
 .list-card-mot img {
-    position: relative;
-    z-index: 1;
     margin-top: 8px;
     height: 50%;
     width: 100%;
@@ -544,6 +539,7 @@
 
 #left,
 #right {
+    margin-top: -125px;
     position: absolute;
     width: 100%;
     top: 50%;
@@ -581,7 +577,7 @@
     width: 100%;
     height: auto;
     background-color: #07013c;
-    margin-top: 60px;
+    margin-top: 3rem;
   }
 .footer .box-container{
   display: grid;
@@ -663,4 +659,3 @@
 .menu-bar  .link:hover i{
   margin-right: 1rem;
 }
-
