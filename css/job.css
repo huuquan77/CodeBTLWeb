@@ -413,6 +413,7 @@
 .TopCV-card a {
     text-decoration: none; 
     color: black;
+    font-size: 0.8rem;
 }
 .TopCV-cardt h3 {
     color: black; 
@@ -477,8 +478,9 @@
 }
 .list {
     position: absolute;
-    margin-left: 150px;
     z-index: 1;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 .list h2 {
     color: white;
@@ -487,16 +489,18 @@
 }
 .list-card {
     display: flex;
-    align-items: center;
-    position: relative; 
+
     overflow: hidden; 
-    width: 1260px; 
+    position: relative;
+    width: 75rem;
+    
+    
 }
 .list-card-mot {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: white;
     height: 200px;
-    width: 290px;
+    width: 280px;
     border: 1px solid black;
     margin-top: 20px;
     margin-left: 20px;
@@ -537,6 +541,7 @@
 #right {
     margin-top: -125px;
     position: absolute;
+    width: 100%;
     top: 50%;
     transform: translateY(-50%);
     width: 40px;
@@ -556,7 +561,7 @@
 }
 
 #right {
-    right: -8px;
+    right: -20px;
     border-radius: 50%; 
 }
 

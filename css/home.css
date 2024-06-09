@@ -521,8 +521,8 @@ font-size: 18px;
 }
 .list-card{
   display: grid;
-  grid-template-columns: repeat(4, 260px);
-  grid-template-rows: repeat(1, 270px);
+  grid-template-columns: repeat(4, 16rem);
+  grid-template-rows: repeat(1, 17rem);
   gap: 1.5rem;
   justify-content: center;
 }
@@ -530,9 +530,9 @@ font-size: 18px;
   margin: auto;
   margin-bottom: 90px;
   text-align: center;
-  width: 600px;
-  height: 80px;
-  line-height: 2.5;
+  width: 37.5rem;
+  height: 5rem;
+  line-height: 3.2;
   color: white;
   background-color: #6a5af9;
   clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
@@ -561,23 +561,23 @@ font-size: 18px;
 }
 
 .item1{
-  margin-left: 20px;
-  font-size: 13px;
+  margin-left: 1.25rem;
+  font-size: 0.8rem;
   color: black;
 }
 .item2{
-  margin-left: 20px;
+  margin-left: 1.25rem;
   font-size: 19px;
-  margin-top: 10px;
+  margin-top: 0.6rem;
   color:#415fcb;
 
 }
 .item3{
   float: left; 
-  margin-left: 20px;
-  margin-top: 10px;
-  width: 50px;
-  height: 15px;
+  margin-left: 1.25rem;
+  margin-top: 0.6rem;
+  width: 3.2rem;
+  height: 1rem;
   background-color:#e5ebff;
   color: #415fcb; 
   font-size: 12px;
@@ -585,11 +585,11 @@ font-size: 18px;
 
 }
 .item4{
-  margin-top: 32px;
-  margin-left: 90px;
-  margin-top: 10px;
+  margin-top: 2rem;
+  margin-left: 5.6rem;
+  margin-top: 0.6rem;
   width: 7rem;
-  height: 15px;
+  height: 0.9rem;
   background-color:#e5ebff;
   color: #415fcb; 
   text-align:center;
@@ -618,8 +618,8 @@ font-size: 18px;
 .text-container h1{
   font-size: 25px;
   margin:20px auto 30px auto;
-  width: 380px;
-  height: 80px;
+  width: 23.8rem;
+  height: 5rem;
   color: white;
   background-color: #6a5af9;
   clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
@@ -638,8 +638,8 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 10px;
-width: 362px;
-height: 130px;
+width: 22.6rem;
+height: 8.1rem;
 background: white;
 border-radius: 10px;
 border: 2px solid #b9b9b9;
