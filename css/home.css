@@ -5,7 +5,7 @@
 }
 body{
   font-family: 'Poppins', sans-serif;
-  margin: 0;
+ 
 }
 
 .nav{
@@ -556,10 +556,14 @@ font-size: 18px;
 .card1:hover{
   transform: scale(1.1)
 }
+.card1 a{
+  text-decoration: none;
+}
 
 .item1{
   margin-left: 20px;
   font-size: 13px;
+  color: black;
 }
 .item2{
   margin-left: 20px;
