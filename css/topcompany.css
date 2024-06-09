@@ -40,10 +40,10 @@ body{
     margin-right: 5px;
   }
   .menu .logo img{
-    margin-top: 7px;
+    margin-top: 15px;
     margin-left: 10px;
-    height: 60px;
-    object-fit: cover;
+    height: 50px;
+    object-fit: contain;
     width: 100%;
   }
   .menu button{
@@ -227,7 +227,8 @@ body{
   
   }
   .top-companies .company-content p{
-      margin-left: 15px;
+      margin: 10px 0 0 15px;;
+
   }
   
   .top-companies .company-content img{

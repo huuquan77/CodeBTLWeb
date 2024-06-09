@@ -37,10 +37,10 @@ body{
   margin-right: 5px;
 }
 .menu .logo img{
-  margin-top: 7px;
+  margin-top: 15px;
   margin-left: 10px;
-  height: 60px;
-  object-fit: cover;
+  height: 50px;
+  object-fit: contain;
   width: 100%;
 }
 .menu button{
@@ -746,7 +746,7 @@ color: orange;
 }
 .menu-bar{
 color: white;
-margin-top: 10px;
+margin-top: 25px;
 }
 .menu-bar a{
 display: block;
