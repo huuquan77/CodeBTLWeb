@@ -84,27 +84,7 @@ transform: scaleX(1);
   transform: scaleX(1); 
   
 }
-.form{
-  width: 20%;
-}
-.box{
-border: none;
-background: transparent;
-text-decoration: none;
-width: 100px;
-height: 45px;
-border: 1px solid none;
-border-radius: 4px;
-background: #423f32;
-margin-right: 10px;
 
-
-}
-.box a{
-text-decoration: none;
-color: white;
-font-size: 17px;
-}
     
 .header{
   position: relative;
