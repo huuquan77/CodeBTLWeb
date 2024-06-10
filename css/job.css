@@ -470,17 +470,21 @@
     width: 100%;
     height: 250px;
     position: relative;
+    
 }
 .background img {
     width: 100%;
     height: 300px;
     z-index: -1;
+   
 }
 .list {
     position: absolute;
-    z-index: 1;
-    margin-left: 2%;
-    margin-right: 2%;
+    z-index: 1; 
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 .list h2 {
     color: white;
