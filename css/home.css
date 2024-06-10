@@ -88,10 +88,9 @@ transform: scaleX(1);
 
 .main{
 position: relative;
-}
-.main{
 margin: 0px 0px;
 }
+
 .pic-img{
 object-fit: cover;
 width: 100%;
@@ -213,13 +212,7 @@ overflow: hidden;
 white-space: nowrap;
 scroll-behavior: smooth;
 }
-/* .carousel.dragging{
-cursor: grab;
-scroll-behavior: auto;
-}
-.carousel.dragging img{
-pointer-events: none;
-} */
+
 .carousel img{
   height: 9.9rem;
   object-fit: cover;
@@ -765,4 +758,90 @@ padding-right: 10px;
 }
 .menu-bar  .link:hover i{
 margin-right: 1rem;
+}
+
+@media only screen and (max-width: 739px) {
+  .menu .nav-link{
+    display: none;
+  }
+  .main{
+    top: 20px;
+  }
+  .top-company{
+    margin-top: 10px;
+  }
+  .wrapper{
+    max-width: 24rem;
+  }
+  .carousel img{
+    width: 23.5rem;
+  }
+  .job-work{
+    display: block;
+    width: 20rem;
+    margin:auto;
+  }
+  .card{
+    margin: 20px;
+  }
+  .major{
+    border: none;
+  }
+  .major-search{
+    display: grid;
+    grid-template-columns: repeat(2, 190px);
+    grid-template-rows: repeat(1, 190px);
+    justify-content: flex-start;
+  }
+  .major h1{
+    left: 7%;
+  }
+  .test-skills h1{
+    font-size: 17px;
+    width: 27rem;
+    height: 4rem;
+    line-height: 3.4;
+    margin-bottom: 10px;
+  }
+  .list-card{
+    display: block;
+  }
+  .card1{
+    width: 15rem;
+    height: 17rem;
+    margin: 0 auto 10px auto;
+  }
+  .card1:hover{
+    transform: none;
+  }
+  .card1.push-up{
+    transform: translate(0,0);
+  }
+  .card1.push-up:hover{
+    transform: scale(1) translate(0,0);
+  }
+  .box-text{
+    display: block;
+    margin-left: 30px;
+  }
+  .text-container h1{
+    margin-left: 30px;
+  }
+  .slider{
+    width: 490px;
+  }
+  .slider .list img{
+    width: 490px;
+  }
+  .slider .buttons{
+    display: none;
+  }
+  .footer .box-container{
+    display: block;
+  }
+}
+@media only screen and (min-width: 740px) and (max-width: 1023px){
+  .menu .nav-link{
+    display: none;
+  }
 }

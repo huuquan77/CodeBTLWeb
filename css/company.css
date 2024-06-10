@@ -90,9 +90,7 @@ transform: scaleX(1);
   position: relative;
   top: 70px;
 }
-.recommand .banner{
-  position: relative;
-}
+
 .recommand .banner img{
   width: 100%;
   height: 22.8rem;
