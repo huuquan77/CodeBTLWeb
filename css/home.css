@@ -213,13 +213,13 @@ overflow: hidden;
 white-space: nowrap;
 scroll-behavior: smooth;
 }
-.carousel.dragging{
+/* .carousel.dragging{
 cursor: grab;
 scroll-behavior: auto;
 }
 .carousel.dragging img{
 pointer-events: none;
-}
+} */
 .carousel img{
   height: 9.9rem;
   object-fit: cover;
